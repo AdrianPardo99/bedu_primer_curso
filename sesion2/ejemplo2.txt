@@ -1,51 +1,52 @@
-mysql> SELECT (1 + 7) * (10 / (6 - 4));
-+--------------------------+
-| (1 + 7) * (10 / (6 - 4)) |
-+--------------------------+
-|                  40.0000 |
-+--------------------------+
-1 row in set (0.11 sec)
+# Ejemplo 2
+SELECT (1 + 7) * (10 / (6 - 4));
+# +--------------------------+
+# | (1 + 7) * (10 / (6 - 4)) |
+# +--------------------------+
+# |                  40.0000 |
+# +--------------------------+
+# 1 row in set (0.11 sec)
 
-mysql> SELECT avg(precio) FROM articulo;
-+--------------------+
-| avg(precio)        |
-+--------------------+
-| 3512.7309399999986 |
-+--------------------+
-1 row in set (0.11 sec)
-
-
-mysql> SELECT count(*) FROM articulo;
-+----------+
-| count(*) |
-+----------+
-|     1000 |
-+----------+
-1 row in set (0.13 sec)
+SELECT avg(precio) FROM articulo;
+# +--------------------+
+# | avg(precio)        |
+# +--------------------+
+# | 3512.7309399999986 |
+# +--------------------+
+# 1 row in set (0.11 sec)
 
 
-mysql> SELECT max(precio) FROM articulo;
-+-------------+
-| max(precio) |
-+-------------+
-|     6997.58 |
-+-------------+
-1 row in set (0.11 sec)
+SELECT count(*) FROM articulo;
+# +----------+
+# | count(*) |
+# +----------+
+# |     1000 |
+# +----------+
+# 1 row in set (0.13 sec)
 
 
-mysql> SELECT min(precio) FROM articulo;
-+-------------+
-| min(precio) |
-+-------------+
-|       11.19 |
-+-------------+
-1 row in set (0.12 sec)
+SELECT max(precio) FROM articulo;
+# +-------------+
+# | max(precio) |
+# +-------------+
+# |     6997.58 |
+# +-------------+
+# 1 row in set (0.11 sec)
 
 
-mysql> SELECT sum(precio) FROM articulo;
-+--------------------+
-| sum(precio)        |
-+--------------------+
-| 3512730.9399999985 |
-+--------------------+
-1 row in set (0.11 sec)
+SELECT min(precio) FROM articulo;
+# +-------------+
+# | min(precio) |
+# +-------------+
+# |       11.19 |
+# +-------------+
+# 1 row in set (0.12 sec)
+
+
+SELECT sum(precio) FROM articulo;
+# +--------------------+
+# | sum(precio)        |
+# +--------------------+
+# | 3512730.9399999985 |
+# +--------------------+
+# 1 row in set (0.11 sec)

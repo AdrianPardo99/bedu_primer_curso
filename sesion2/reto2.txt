@@ -1,34 +1,35 @@
-mysql> SELECT AVG(salario) FROM puesto;
-+--------------------+
-| AVG(salario)       |
-+--------------------+
-| 19595.051179999973 |
-+--------------------+
-1 row in set (0.11 sec)
+# Reto 2
+SELECT AVG(salario) FROM puesto;
+# +--------------------+
+# | AVG(salario)       |
+# +--------------------+
+# | 19595.051179999973 |
+# +--------------------+
+# 1 row in set (0.11 sec)
 
 
-mysql> SELECT COUNT(*) FROM articulo WHERE nombre LIKE "%Pasta%";
-+----------+
-| COUNT(*) |
-+----------+
-|       17 |
-+----------+
-1 row in set (0.11 sec)
+SELECT COUNT(*) FROM articulo WHERE nombre LIKE "%Pasta%";
+# +----------+
+# | COUNT(*) |
+# +----------+
+# |       17 |
+# +----------+
+# 1 row in set (0.11 sec)
 
 
-mysql> SELECT MIN(salario), MAX(salario) FROM puesto;
-+--------------+--------------+
-| MIN(salario) | MAX(salario) |
-+--------------+--------------+
-|     10013.44 |     29996.58 |
-+--------------+--------------+
-1 row in set (0.11 sec)
+SELECT MIN(salario), MAX(salario) FROM puesto;
+# +--------------+--------------+
+# | MIN(salario) | MAX(salario) |
+# +--------------+--------------+
+# |     10013.44 |     29996.58 |
+# +--------------+--------------+
+# 1 row in set (0.11 sec)
 
 
-mysql> SELECT SUM(Salario) FROM (SELECT salario as Salario FROM puesto ORDER BY id_puesto DESC LIMIT 5) as Sal;
-+--------------+
-| SUM(Salario) |
-+--------------+
-|     79690.05 |
-+--------------+
-1 row in set (0.11 sec)
+SELECT SUM(Salario) FROM (SELECT salario as Salario FROM puesto ORDER BY id_puesto DESC LIMIT 5) as Sal;
+# +--------------+
+# | SUM(Salario) |
+# +--------------+
+# |     79690.05 |
+# +--------------+
+# 1 row in set (0.11 sec)

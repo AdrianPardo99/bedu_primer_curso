@@ -1,355 +1,356 @@
+# Ejemplo 1
 SELECT * FROM empleado WHERE nombre LIKE 'M%';
-+-------------+-----------+------------+------------------+------------------+---------------+
-| id_empleado | id_puesto | nombre     | apellido_paterno | apellido_materno | rfc           |
-+-------------+-----------+------------+------------------+------------------+---------------+
-|           2 |       659 | Morey      | Bowskill         | Metham           | SAUJ115055X38 |
-|          21 |       317 | Melanie    | Wiffield         | Darque           | ETSG302043I33 |
-|          30 |       258 | Mirabella  | Murden           | Bexon            | QDHW540143A35 |
-|          53 |       209 | Millie     | Gorden           | Lammerich        | IXHY474580G35 |
-|          71 |       656 | Matty      | Rouse            | Ogle             | RLCA504782Z45 |
-|          80 |       743 | Moss       | Robinette        | Tredwell         | YSDU292875Y06 |
-|          81 |       648 | Mikael     | Crambie          | Lenthall         | QZFJ646758J42 |
-|          84 |       918 | Mable      | Glading          | Ridgley          | KMFL104112F59 |
-|          89 |       251 | Mychal     | Wahlberg         | Troyes           | ZXTE901978E72 |
-|          90 |       258 | Michaeline | Stolli           | Hamer            | NLKQ487540S39 |
-|          96 |       516 | Maynord    | Derycot          | Arendsen         | SHVQ947385Y01 |
-|         106 |        32 | Mozes      | Proudlock        | Abbet            | DGVE237432Y55 |
-|         110 |       764 | Maribel    | Chevolleau       | Dumini           | WOAD845005I23 |
-|         117 |       938 | Mallory    | MacKall          | Bride            | ECLW395996O03 |
-|         127 |       244 | Malorie    | Killoran         | Vasyukhnov       | BGUQ096578Q54 |
-|         144 |       848 | Madella    | Escalero         | Wenzel           | LHVZ394607R96 |
-|         173 |       629 | Morganne   | Curley           | Riha             | YKTV750494Q75 |
-|         174 |       258 | Melantha   | Ginni            | Wolfindale       | HPDY799736A62 |
-|         179 |       635 | Mahmud     | Skett            | Idwal Evans      | NMTJ149483O93 |
-|         202 |       775 | Martita    | Baroux           | Pitway           | GWAX539164M60 |
-|         219 |        45 | Mabelle    | Sheddan          | Murden           | XOHU952304A00 |
-|         225 |       199 | Merrily    | Lidell           | Medford          | WEDY188315Q89 |
-|         227 |       510 | Mireielle  | Liddyard         | Bretland         | XSJW578402Z73 |
-|         240 |        29 | Milton     | Haselgrove       | Sommers          | OXGV797366G65 |
-|         242 |       632 | Mike       | Dutton           | Cruce            | HLKA554264P87 |
-|         268 |       854 | Maryjane   | Hanning          | Parcells         | FEJL157406B08 |
-|         294 |       649 | Myrle      | Stratley         | Ouldcott         | WPYB370652W57 |
-|         296 |       174 | Margaret   | Ramalho          | Allsop           | CANG985212V77 |
-|         300 |       428 | Matilda    | Colquhoun        | Inge             | SUJM985549E80 |
-|         311 |       448 | Meredithe  | Johnsson         | Reditt           | OQWE115570X82 |
-|         312 |        48 | Moselle    | Sharrocks        | Lally            | GOZB937786A21 |
-|         356 |       605 | Melosa     | Spavins          | Hesse            | FDJP585948D78 |
-|         361 |         4 | Maxy       | Udden            | Kose             | MBZF302490Y06 |
-|         368 |       713 | Murdoch    | Middas           | Marcinkus        | MAPT815858G04 |
-|         370 |       163 | Meghann    | Dougary          | Partleton        | OXWK562466E31 |
-|         371 |       213 | Max        | Paula            | Trotton          | BMLV834299A55 |
-|         372 |       197 | Marion     | Manchester       | Colton           | JERB913667S17 |
-|         376 |       665 | Mil        | Penddreth        | Lethcoe          | GWFT211396G57 |
-|         384 |       743 | Mechelle   | Weller           | Piper            | RPEV372597E42 |
-|         387 |        68 | Marguerite | Corbie           | Durnan           | WVDR219915Q07 |
-|         398 |       548 | Maribelle  | Van Daalen       | Pigford          | XGPK492502I58 |
-|         419 |       125 | Milka      | Benninck         | Le Sieur         | UNSA091919X38 |
-|         439 |       728 | Milt       | Melhuish         | Ashbe            | FJRN940065D97 |
-|         441 |       450 | Myrilla    | Hathaway         | Thebe            | OYTF089854O67 |
-|         443 |       310 | Marillin   | Schult           | Wyman            | CIWM419350O63 |
-|         444 |       698 | Mathilde   | Muggach          | Barrington       | PWVH268494F28 |
-|         446 |       171 | Moyna      | Yeatman          | Duffrie          | PBUK517962J58 |
-|         455 |       138 | Mair       | Ivey             | Craighill        | QVNI559213K54 |
-|         468 |       321 | Malinde    | Cato             | Dyhouse          | ZOVJ142322X40 |
-|         496 |       749 | Michel     | Pethick          | Denerley         | KHDR197504U08 |
-|         499 |       111 | Margarethe | Barden           | Gooke            | CYFJ741944I28 |
-|         542 |       919 | Martainn   | Knaggs           | Claridge         | HYAN268701C61 |
-|         544 |       617 | Massimo    | Blaine           | Acors            | KQHW767970S13 |
-|         567 |       240 | Merrie     | Lamperd          | Widdall          | IRBD092580T41 |
-|         574 |       889 | Margaretha | Woodrow          | Van der Son      | RVDQ721468F14 |
-|         580 |       589 | Marietta   | Rupert           | Foggarty         | VXNT468062Y38 |
-|         598 |       570 | Melicent   | Bowen            | Hawford          | LIHD524049J06 |
-|         631 |       904 | Myer       | Dyment           | Coupman          | TQRL486157D18 |
-|         632 |       203 | Melania    | Beels            | Rizzolo          | ZTSF980067V84 |
-|         642 |       434 | Mela       | Oakenfull        | Lanmeid          | UXGQ962492V26 |
-|         652 |       995 | Merle      | Greengrass       | Skain            | ULQK727963M26 |
-|         656 |       819 | Maxie      | Mitcheson        | Urry             | POBQ646025Y91 |
-|         667 |       499 | Minna      | Willcott         | Yendall          | PZJG071133Z25 |
-|         675 |       850 | Myca       | Joao             | Banghe           | GNXL987206R43 |
-|         682 |       144 | Mignonne   | Baszniak         | Tremaine         | KNOE553489O79 |
-|         689 |       724 | Merrie     | Dorot            | Carss            | BIJX140491Z44 |
-|         691 |       197 | Miguelita  | Gyrgorcewicx     | Baitson          | FHUQ255183C40 |
-|         693 |       812 | Marcellina | Rennebach        | O'Fairy          | KSXC084833K49 |
-|         702 |       120 | Marketa    | Marcone          | Lalley           | BOWR779925S05 |
-|         705 |       250 | Myrtie     | Lemery           | Utterson         | NDXL549390U39 |
-|         721 |        62 | Mitchael   | Gillson          | Kroon            | BHML727914V05 |
-|         731 |       418 | Moina      | Yesson           | Jellyman         | ZBHV480356S19 |
-|         733 |       905 | Marla      | Morison          | Radbone          | GINF874329W18 |
-|         738 |        24 | Meridith   | Rydeard          | Kolyagin         | OEDI422661W72 |
-|         747 |       465 | Miguelita  | Grimsdyke        | Nardi            | SUWQ930882K31 |
-|         763 |       945 | Margareta  | McElwee          | Venediktov       | QNGU443101F44 |
-|         765 |       427 | Maryellen  | Parkisson        | Itzkovici        | HYWO934761B24 |
-|         768 |       372 | Melinda    | Rawet            | Blow             | GFQI220932Q89 |
-|         774 |       697 | Matthus    | Greedier         | Schaffel         | HFUI494687Q40 |
-|         781 |       850 | Monika     | Baytrop          | Wilne            | SBZX438327K92 |
-|         784 |       398 | Madeleine  | Covely           | O'Loughane       | BWPL456191H70 |
-|         813 |       345 | Michal     | Trengrouse       | Sermin           | SNYQ097775M27 |
-|         820 |       130 | Melodee    | Kilmurry         | Harbisher        | IFMQ480717K67 |
-|         836 |       224 | Merv       | Pratton          | Pohl             | TGUD141805N25 |
-|         841 |       540 | Mason      | Lorentzen        | Tregust          | JXPT837114V85 |
-|         848 |       877 | Monro      | Gavrielli        | Bruckstein       | ETJZ187838Z27 |
-|         859 |       143 | Martyn     | Jorn             | Frogley          | VNPX210818D37 |
-|         871 |        15 | Morse      | Culpin           | Gatcliff         | NQME098397D30 |
-|         873 |       286 | Marten     | Carefull         | Kelberer         | OYCG954523V84 |
-|         896 |       650 | Maurise    | Danzey           | Dimitru          | HEQD720455L39 |
-|         899 |       449 | Monty      | Rolland          | Woolvett         | FVRT845816K12 |
-|         912 |       868 | Mano       | Petrulis         | Guilder          | XBNR827036M42 |
-|         914 |       153 | Maurise    | Spratley         | Bener            | OCUR946138Z92 |
-|         922 |       366 | Meggi      | Threadgall       | Dayly            | OYLI920516W10 |
-|         926 |       457 | Meyer      | Ziemecki         | Skae             | AXFG115443G12 |
-|         959 |       450 | Menard     | Pow              | Enochsson        | LVZO866427F13 |
-|         973 |       799 | Merell     | Blore            | Rijkeseis        | FECO887425Y85 |
-|         990 |       862 | Margi      | Sinkin           | Lawford          | VEHA568806I92 |
-|         993 |       719 | Merrel     | Furzey           | Benech           | NPGA941789A17 |
-+-------------+-----------+------------+------------------+------------------+---------------+
-99 rows in set (0.12 sec)
+# +-------------+-----------+------------+------------------+------------------+---------------+
+# | id_empleado | id_puesto | nombre     | apellido_paterno | apellido_materno | rfc           |
+# +-------------+-----------+------------+------------------+------------------+---------------+
+# |           2 |       659 | Morey      | Bowskill         | Metham           | SAUJ115055X38 |
+# |          21 |       317 | Melanie    | Wiffield         | Darque           | ETSG302043I33 |
+# |          30 |       258 | Mirabella  | Murden           | Bexon            | QDHW540143A35 |
+# |          53 |       209 | Millie     | Gorden           | Lammerich        | IXHY474580G35 |
+# |          71 |       656 | Matty      | Rouse            | Ogle             | RLCA504782Z45 |
+# |          80 |       743 | Moss       | Robinette        | Tredwell         | YSDU292875Y06 |
+# |          81 |       648 | Mikael     | Crambie          | Lenthall         | QZFJ646758J42 |
+# |          84 |       918 | Mable      | Glading          | Ridgley          | KMFL104112F59 |
+# |          89 |       251 | Mychal     | Wahlberg         | Troyes           | ZXTE901978E72 |
+# |          90 |       258 | Michaeline | Stolli           | Hamer            | NLKQ487540S39 |
+# |          96 |       516 | Maynord    | Derycot          | Arendsen         | SHVQ947385Y01 |
+# |         106 |        32 | Mozes      | Proudlock        | Abbet            | DGVE237432Y55 |
+# |         110 |       764 | Maribel    | Chevolleau       | Dumini           | WOAD845005I23 |
+# |         117 |       938 | Mallory    | MacKall          | Bride            | ECLW395996O03 |
+# |         127 |       244 | Malorie    | Killoran         | Vasyukhnov       | BGUQ096578Q54 |
+# |         144 |       848 | Madella    | Escalero         | Wenzel           | LHVZ394607R96 |
+# |         173 |       629 | Morganne   | Curley           | Riha             | YKTV750494Q75 |
+# |         174 |       258 | Melantha   | Ginni            | Wolfindale       | HPDY799736A62 |
+# |         179 |       635 | Mahmud     | Skett            | Idwal Evans      | NMTJ149483O93 |
+# |         202 |       775 | Martita    | Baroux           | Pitway           | GWAX539164M60 |
+# |         219 |        45 | Mabelle    | Sheddan          | Murden           | XOHU952304A00 |
+# |         225 |       199 | Merrily    | Lidell           | Medford          | WEDY188315Q89 |
+# |         227 |       510 | Mireielle  | Liddyard         | Bretland         | XSJW578402Z73 |
+# |         240 |        29 | Milton     | Haselgrove       | Sommers          | OXGV797366G65 |
+# |         242 |       632 | Mike       | Dutton           | Cruce            | HLKA554264P87 |
+# |         268 |       854 | Maryjane   | Hanning          | Parcells         | FEJL157406B08 |
+# |         294 |       649 | Myrle      | Stratley         | Ouldcott         | WPYB370652W57 |
+# |         296 |       174 | Margaret   | Ramalho          | Allsop           | CANG985212V77 |
+# |         300 |       428 | Matilda    | Colquhoun        | Inge             | SUJM985549E80 |
+# |         311 |       448 | Meredithe  | Johnsson         | Reditt           | OQWE115570X82 |
+# |         312 |        48 | Moselle    | Sharrocks        | Lally            | GOZB937786A21 |
+# |         356 |       605 | Melosa     | Spavins          | Hesse            | FDJP585948D78 |
+# |         361 |         4 | Maxy       | Udden            | Kose             | MBZF302490Y06 |
+# |         368 |       713 | Murdoch    | Middas           | Marcinkus        | MAPT815858G04 |
+# |         370 |       163 | Meghann    | Dougary          | Partleton        | OXWK562466E31 |
+# |         371 |       213 | Max        | Paula            | Trotton          | BMLV834299A55 |
+# |         372 |       197 | Marion     | Manchester       | Colton           | JERB913667S17 |
+# |         376 |       665 | Mil        | Penddreth        | Lethcoe          | GWFT211396G57 |
+# |         384 |       743 | Mechelle   | Weller           | Piper            | RPEV372597E42 |
+# |         387 |        68 | Marguerite | Corbie           | Durnan           | WVDR219915Q07 |
+# |         398 |       548 | Maribelle  | Van Daalen       | Pigford          | XGPK492502I58 |
+# |         419 |       125 | Milka      | Benninck         | Le Sieur         | UNSA091919X38 |
+# |         439 |       728 | Milt       | Melhuish         | Ashbe            | FJRN940065D97 |
+# |         441 |       450 | Myrilla    | Hathaway         | Thebe            | OYTF089854O67 |
+# |         443 |       310 | Marillin   | Schult           | Wyman            | CIWM419350O63 |
+# |         444 |       698 | Mathilde   | Muggach          | Barrington       | PWVH268494F28 |
+# |         446 |       171 | Moyna      | Yeatman          | Duffrie          | PBUK517962J58 |
+# |         455 |       138 | Mair       | Ivey             | Craighill        | QVNI559213K54 |
+# |         468 |       321 | Malinde    | Cato             | Dyhouse          | ZOVJ142322X40 |
+# |         496 |       749 | Michel     | Pethick          | Denerley         | KHDR197504U08 |
+# |         499 |       111 | Margarethe | Barden           | Gooke            | CYFJ741944I28 |
+# |         542 |       919 | Martainn   | Knaggs           | Claridge         | HYAN268701C61 |
+# |         544 |       617 | Massimo    | Blaine           | Acors            | KQHW767970S13 |
+# |         567 |       240 | Merrie     | Lamperd          | Widdall          | IRBD092580T41 |
+# |         574 |       889 | Margaretha | Woodrow          | Van der Son      | RVDQ721468F14 |
+# |         580 |       589 | Marietta   | Rupert           | Foggarty         | VXNT468062Y38 |
+# |         598 |       570 | Melicent   | Bowen            | Hawford          | LIHD524049J06 |
+# |         631 |       904 | Myer       | Dyment           | Coupman          | TQRL486157D18 |
+# |         632 |       203 | Melania    | Beels            | Rizzolo          | ZTSF980067V84 |
+# |         642 |       434 | Mela       | Oakenfull        | Lanmeid          | UXGQ962492V26 |
+# |         652 |       995 | Merle      | Greengrass       | Skain            | ULQK727963M26 |
+# |         656 |       819 | Maxie      | Mitcheson        | Urry             | POBQ646025Y91 |
+# |         667 |       499 | Minna      | Willcott         | Yendall          | PZJG071133Z25 |
+# |         675 |       850 | Myca       | Joao             | Banghe           | GNXL987206R43 |
+# |         682 |       144 | Mignonne   | Baszniak         | Tremaine         | KNOE553489O79 |
+# |         689 |       724 | Merrie     | Dorot            | Carss            | BIJX140491Z44 |
+# |         691 |       197 | Miguelita  | Gyrgorcewicx     | Baitson          | FHUQ255183C40 |
+# |         693 |       812 | Marcellina | Rennebach        | O'Fairy          | KSXC084833K49 |
+# |         702 |       120 | Marketa    | Marcone          | Lalley           | BOWR779925S05 |
+# |         705 |       250 | Myrtie     | Lemery           | Utterson         | NDXL549390U39 |
+# |         721 |        62 | Mitchael   | Gillson          | Kroon            | BHML727914V05 |
+# |         731 |       418 | Moina      | Yesson           | Jellyman         | ZBHV480356S19 |
+# |         733 |       905 | Marla      | Morison          | Radbone          | GINF874329W18 |
+# |         738 |        24 | Meridith   | Rydeard          | Kolyagin         | OEDI422661W72 |
+# |         747 |       465 | Miguelita  | Grimsdyke        | Nardi            | SUWQ930882K31 |
+# |         763 |       945 | Margareta  | McElwee          | Venediktov       | QNGU443101F44 |
+# |         765 |       427 | Maryellen  | Parkisson        | Itzkovici        | HYWO934761B24 |
+# |         768 |       372 | Melinda    | Rawet            | Blow             | GFQI220932Q89 |
+# |         774 |       697 | Matthus    | Greedier         | Schaffel         | HFUI494687Q40 |
+# |         781 |       850 | Monika     | Baytrop          | Wilne            | SBZX438327K92 |
+# |         784 |       398 | Madeleine  | Covely           | O'Loughane       | BWPL456191H70 |
+# |         813 |       345 | Michal     | Trengrouse       | Sermin           | SNYQ097775M27 |
+# |         820 |       130 | Melodee    | Kilmurry         | Harbisher        | IFMQ480717K67 |
+# |         836 |       224 | Merv       | Pratton          | Pohl             | TGUD141805N25 |
+# |         841 |       540 | Mason      | Lorentzen        | Tregust          | JXPT837114V85 |
+# |         848 |       877 | Monro      | Gavrielli        | Bruckstein       | ETJZ187838Z27 |
+# |         859 |       143 | Martyn     | Jorn             | Frogley          | VNPX210818D37 |
+# |         871 |        15 | Morse      | Culpin           | Gatcliff         | NQME098397D30 |
+# |         873 |       286 | Marten     | Carefull         | Kelberer         | OYCG954523V84 |
+# |         896 |       650 | Maurise    | Danzey           | Dimitru          | HEQD720455L39 |
+# |         899 |       449 | Monty      | Rolland          | Woolvett         | FVRT845816K12 |
+# |         912 |       868 | Mano       | Petrulis         | Guilder          | XBNR827036M42 |
+# |         914 |       153 | Maurise    | Spratley         | Bener            | OCUR946138Z92 |
+# |         922 |       366 | Meggi      | Threadgall       | Dayly            | OYLI920516W10 |
+# |         926 |       457 | Meyer      | Ziemecki         | Skae             | AXFG115443G12 |
+# |         959 |       450 | Menard     | Pow              | Enochsson        | LVZO866427F13 |
+# |         973 |       799 | Merell     | Blore            | Rijkeseis        | FECO887425Y85 |
+# |         990 |       862 | Margi      | Sinkin           | Lawford          | VEHA568806I92 |
+# |         993 |       719 | Merrel     | Furzey           | Benech           | NPGA941789A17 |
+# +-------------+-----------+------------+------------------+------------------+---------------+
+# 99 rows in set (0.12 sec)
 
 
-mysql> SELECT * FROM empleado WHERE nombre LIKE '%a';
-+-------------+-----------+-------------+------------------+------------------+---------------+
-| id_empleado | id_puesto | nombre      | apellido_paterno | apellido_materno | rfc           |
-+-------------+-----------+-------------+------------------+------------------+---------------+
-|           1 |       235 | Enrichetta  | Bodechon         | Ivkovic          | CLKQ293450Y89 |
-|          16 |       146 | Yulma       | Biskupek         | Gallety          | LEXT995305G96 |
-|          29 |       594 | Klara       | Issatt           | Plampeyn         | NWUO816774Z70 |
-|          30 |       258 | Mirabella   | Murden           | Bexon            | QDHW540143A35 |
-|          38 |        62 | Allina      | Mea              | O'Bradain        | OLKX206084U54 |
-|          44 |       584 | Susana      | Polack           | Fermor           | OHJB687925X00 |
-|          48 |       452 | Decca       | McAlinden        | Signorelli       | VINB499630H31 |
-|          51 |       264 | Joshia      | Emes             | Theze            | NSPZ195280H40 |
-|          60 |       532 | Guinna      | Troughton        | Daubney          | DHLW940247W65 |
-|          68 |       853 | Aurelia     | Lissandre        | Stedman          | WFVQ405975J58 |
-|          74 |        62 | Ofelia      | Schimank         | Gamon            | POKQ786943H81 |
-|          87 |       702 | Luciana     | Broadbridge      | Wickey           | WVEG877882C28 |
-|         101 |       272 | Zelma       | Seefus           | Gresley          | LSPB214787J14 |
-|         103 |       233 | Sada        | Tenwick          | Connachan        | SDYB597883E65 |
-|         104 |        94 | Feliza      | Morston          | Scawn            | CAXP093406B51 |
-|         113 |        14 | Agneta      | Viccary          | Bateson          | KUNS092257C26 |
-|         114 |        37 | Vivia       | Sharpling        | Dickman          | ZUAD515720N91 |
-|         116 |       940 | Nana        | Baumler          | Lyte             | CNZF786183P53 |
-|         135 |       110 | Sylvia      | Stenner          | Jouaneton        | CZRF470924J45 |
-|         137 |       561 | Bethena     | Joly             | Faldo            | QKZE472918F72 |
-|         141 |       763 | Hyacinthia  | Petz             | Cirlos           | KBEO062275Y23 |
-|         144 |       848 | Madella     | Escalero         | Wenzel           | LHVZ394607R96 |
-|         148 |       209 | Teirtza     | Slack            | Beloe            | TWNE896154J25 |
-|         150 |       242 | Theodosia   | Tomanek          | Coopper          | WOJC577448N95 |
-|         154 |       427 | Neda        | Bogays           | Loosley          | FYCB281953F12 |
-|         155 |       490 | Rubina      | Branigan         | Chumley          | APWG607752U21 |
-|         156 |       119 | Goldina     | Fickling         | Huton            | NEPW286884H49 |
-|         161 |       726 | Ariana      | Waldera          | Olerenshaw       | ZXHN369980U53 |
-|         166 |         6 | Della       | Fulbrook         | Harrie           | APGJ840909W11 |
-|         174 |       258 | Melantha    | Ginni            | Wolfindale       | HPDY799736A62 |
-|         176 |       155 | Jehanna     | Schmuhl          | Spight           | GHKU089385S95 |
-|         181 |       491 | Hermina     | MacConnal        | Gavey            | LUCB737962C47 |
-|         182 |       926 | Cayla       | Tolefree         | Chatto           | KJQD081108R47 |
-|         187 |       282 | Ema         | Itzkovwich       | Duthie           | FRXW526637M66 |
-|         190 |       581 | Adrea       | Kingston         | Rawle            | ANVO858924Z92 |
-|         191 |       661 | Sonia       | Raiment          | Youster          | AXVC766731B10 |
-|         202 |       775 | Martita     | Baroux           | Pitway           | GWAX539164M60 |
-|         203 |       248 | Feodora     | Gough            | Natalie          | QDVX992804D67 |
-|         204 |       912 | Irita       | Laurie           | Thompstone       | PCVS688880G66 |
-|         206 |         6 | Katya       | Banbridge        | Fossitt          | ELAY505814Q48 |
-|         216 |       362 | Phyllida    | Mathan           | Bittlestone      | SGQO273998B88 |
-|         226 |       209 | Bellina     | Elwill           | Revey            | OKEA355243B15 |
-|         231 |       484 | Agnola      | Shutler          | Clendennen       | CEHO015106G68 |
-|         254 |       408 | Hermia      | Batho            | Behrens          | WYDZ580769F19 |
-|         259 |       955 | Trisha      | Brooke           | Attarge          | IULO681220H65 |
-|         264 |       390 | Odessa      | Grubbe           | Friday           | JQBZ698868N69 |
-|         270 |       908 | Elfrida     | Saunier          | Caudray          | FVGT541978A33 |
-|         281 |       380 | Claudia     | Cammish          | Dmitriev         | PFJI356855W02 |
-|         291 |        95 | Allegra     | Ciepluch         | Sidsaff          | NSRM333041N84 |
-|         300 |       428 | Matilda     | Colquhoun        | Inge             | SUJM985549E80 |
-|         302 |       817 | Angelika    | Kember           | Klesl            | DVWH453301E30 |
-|         303 |       561 | Petrina     | Dowglass         | Tottle           | PQEC462614Q84 |
-|         309 |       360 | Corina      | Piwell           | Gross            | RNWT294210I40 |
-|         314 |       300 | Catlaina    | Saines           | Barttrum         | VMBH558627F42 |
-|         324 |       649 | Brigitta    | Pitkeathly       | Cluely           | HSJV922677F86 |
-|         333 |       731 | Prisca      | Beresford        | Congdon          | RZGT674132U20 |
-|         338 |       606 | Albina      | Boyland          | Collens          | TPJV121605B24 |
-|         340 |       248 | Daria       | Reuter           | Nowland          | WOLK390698L94 |
-|         347 |       858 | Rhianna     | Randlesome       | Sturr            | OAQX878390D72 |
-|         351 |       751 | Conchita    | Catling          | Okie             | EOXD289370Y81 |
-|         356 |       605 | Melosa      | Spavins          | Hesse            | FDJP585948D78 |
-|         357 |       410 | Gavra       | Bette            | Cozins           | YQLV431781I98 |
-|         362 |       478 | Ariella     | Crake            | Blunsden         | NJSM002269V68 |
-|         366 |       184 | Correna     | Webburn          | Tiery            | ESPL266091F14 |
-|         369 |       339 | Giuditta    | Chicchetto       | Helbeck          | NMFW494417N54 |
-|         377 |       468 | Rasla       | Brou             | Burlingham       | VZUD996301F42 |
-|         378 |       200 | Damita      | Fishburn         | Rait             | WQZR682964E50 |
-|         382 |       196 | Sonya       | Aldcorn          | Crofts           | REGA338960L43 |
-|         388 |       924 | Giuditta    | Domelow          | Brum             | LTQK598004S92 |
-|         389 |       396 | Chiarra     | Feldbrin         | Malt             | CDTS611416O25 |
-|         391 |       354 | Quintina    | Semper           | Dwelly           | VSUD274785Y76 |
-|         402 |        74 | Othilia     | Signe            | Wadforth         | TPEU887063N71 |
-|         403 |       367 | Adora       | Slowcock         | Ceschelli        | HJIN868748B84 |
-|         405 |       138 | Emalia      | Stirrip          | Woodeson         | QYSL651483Z78 |
-|         412 |       789 | Orsa        | Knappitt         | Lemanu           | MYIR323187W36 |
-|         413 |       433 | Julianna    | Gecke            | Guille           | WVTI176350P68 |
-|         417 |       124 | Odella      | Grenshiels       | Padfield         | IAVF216772E32 |
-|         419 |       125 | Milka       | Benninck         | Le Sieur         | UNSA091919X38 |
-|         420 |       690 | Jacquenetta | Broggelli        | Flacknell        | MDYG190806F87 |
-|         423 |        65 | Nikola      | Trouncer         | Twigge           | TMIC021452S09 |
-|         432 |       207 | Hestia      | Barlace          | Aimer            | ASXM428955E06 |
-|         441 |       450 | Myrilla     | Hathaway         | Thebe            | OYTF089854O67 |
-|         442 |       717 | Rubia       | McChesney        | Ellaman          | QKSH780732L50 |
-|         445 |       626 | Aarika      | Pinder           | Ramard           | OWHI207507L50 |
-|         446 |       171 | Moyna       | Yeatman          | Duffrie          | PBUK517962J58 |
-|         470 |       868 | Lolita      | Elloit           | Ghion            | VRPG236311X99 |
-|         474 |       346 | Ofilia      | Chestle          | Tinston          | NSTY101576D12 |
-|         475 |       428 | Tarra       | Duckham          | Filchakov        | UCBK992247L18 |
-|         476 |       197 | Helaina     | Sire             | Mascall          | UPJX396352B86 |
-|         479 |       546 | Johnna      | Lamping          | Parcells         | XGNM863838T12 |
-|         484 |       783 | Leshia      | Dutt             | Childers         | PUSQ132716A88 |
-|         487 |       428 | Charlotta   | Padbery          | Shellsheere      | DGSR197987M39 |
-|         491 |       179 | Adrianna    | Kirkland         | Potteril         | MAIL000696B20 |
-|         495 |       410 | Genna       | Causton          | Edmett           | AYMG189843O33 |
-|         498 |       946 | Blancha     | Miko             | Dalla            | RMTP820682R11 |
-|         505 |       286 | Guillema    | Prentice         | Wethers          | ZGTS218924U73 |
-|         546 |       930 | Amalia      | Leglise          | Spinke           | MVCP113829B05 |
-|         549 |       185 | Lydia       | Hainge           | Sumbler          | JMOA547185W26 |
-|         550 |       512 | Koressa     | Eustice          | Pogue            | QKST857657F50 |
-|         551 |       753 | Gloria      | Godbert          | Robbel           | OLHY352557V75 |
-|         553 |       730 | Bernadina   | Salvador         | Kerans           | MWYN896771E17 |
-|         564 |       687 | Trina       | Wollrauch        | Ramey            | ZEYJ527376S78 |
-|         569 |       871 | Arlana      | Fanstone         | Brothers         | TARG400578M92 |
-|         571 |       865 | Nora        | O'Suaird         | MacAskie         | LKTM863284G29 |
-|         574 |       889 | Margaretha  | Woodrow          | Van der Son      | RVDQ721468F14 |
-|         579 |       748 | Sada        | Madle            | Neath            | XRAN981788T74 |
-|         580 |       589 | Marietta    | Rupert           | Foggarty         | VXNT468062Y38 |
-|         583 |       864 | Alyosha     | Foottit          | Hankey           | KUXG434650N64 |
-|         584 |       331 | Kylila      | MacNeilly        | Bonner           | FALC555993A58 |
-|         587 |       857 | Sidonia     | Rooson           | Kneel            | AJPM216956L73 |
-|         593 |       495 | Gratiana    | Edelheit         | Gask             | ENCF292706Y39 |
-|         596 |       741 | Zenia       | Gearing          | Barajas          | HKCO655558I12 |
-|         600 |       415 | Teresita    | Knipe            | Boreham          | IVJL637432F66 |
-|         607 |       943 | Grazia      | Hordell          | Simonaitis       | ZJRT089940A46 |
-|         617 |       618 | Orella      | Blankett         | Tabord           | ISKN351640P30 |
-|         624 |       299 | Lara        | Tamplin          | Tolchard         | OZIP916792K89 |
-|         630 |       492 | Annadiana   | Yurukhin         | McEttigen        | CIVG929907U72 |
-|         632 |       203 | Melania     | Beels            | Rizzolo          | ZTSF980067V84 |
-|         635 |        57 | Giacinta    | Rentilll         | Dallan           | MFTB406398G41 |
-|         638 |       699 | Stella      | Florentine       | Wellard          | MQOX597488R77 |
-|         640 |       583 | Katina      | Lepick           | Peeters          | MYTF104594O21 |
-|         641 |       664 | Essa        | Charte           | Raubenheimer     | NJAB526219K75 |
-|         642 |       434 | Mela        | Oakenfull        | Lanmeid          | UXGQ962492V26 |
-|         646 |       321 | Franciska   | McClosh          | Ronald           | WSTC262334S83 |
-|         647 |       708 | Zora        | Lindsay          | Tofanelli        | JEQS715894Y48 |
-|         653 |       113 | Reba        | Morshead         | Goakes           | BIPN747304U48 |
-|         654 |       901 | Bea         | Allaway          | Haggata          | SWKX540681V20 |
-|         658 |       523 | Petronia    | Yeabsley         | Airdrie          | KYQB494566B37 |
-|         667 |       499 | Minna       | Willcott         | Yendall          | PZJG071133Z25 |
-|         668 |        57 | Karia       | Lardiner         | Jobb             | PQWH192716P51 |
-|         673 |        93 | Lissa       | Reschke          | Sheringham       | WVIS504842F31 |
-|         675 |       850 | Myca        | Joao             | Banghe           | GNXL987206R43 |
-|         677 |       711 | Lenka       | Latham           | Wyeth            | BIGW500163K51 |
-|         680 |       882 | Arlana      | Merioth          | Sellar           | EFOW416889B20 |
-|         691 |       197 | Miguelita   | Gyrgorcewicx     | Baitson          | FHUQ255183C40 |
-|         693 |       812 | Marcellina  | Rennebach        | O'Fairy          | KSXC084833K49 |
-|         701 |       712 | Odetta      | Turpey           | Saterweyte       | MZDP838003U97 |
-|         702 |       120 | Marketa     | Marcone          | Lalley           | BOWR779925S05 |
-|         709 |       939 | Almeda      | Goodship         | Scroxton         | FCPY021086T81 |
-|         711 |       691 | Eustacia    | Hallet           | Orrell           | AVPK310066T87 |
-|         715 |       906 | Lelia       | Dabourne         | Mossop           | GHDW677979U76 |
-|         724 |       729 | Sondra      | Brownill         | Haggerty         | JHWQ625311N70 |
-|         731 |       418 | Moina       | Yesson           | Jellyman         | ZBHV480356S19 |
-|         732 |       614 | Delphinia   | Cumes            | Powderham        | DYXA987932L39 |
-|         733 |       905 | Marla       | Morison          | Radbone          | GINF874329W18 |
-|         737 |       536 | Correna     | Dudleston        | Rudyard          | XAYM530480R40 |
-|         739 |       701 | Elicia      | Hatch            | Chuck            | MPDF042882A21 |
-|         741 |       216 | Charita     | Levi             | Habbergham       | ETJM050841M79 |
-|         744 |        32 | Dulciana    | Livick           | Downton          | ENLG744684D91 |
-|         747 |       465 | Miguelita   | Grimsdyke        | Nardi            | SUWQ930882K31 |
-|         751 |       932 | Dorotea     | Lyle             | Polsin           | FUGR421058A88 |
-|         761 |       895 | Arabela     | Rice             | Geikie           | RUZJ847792Y79 |
-|         763 |       945 | Margareta   | McElwee          | Venediktov       | QNGU443101F44 |
-|         767 |       874 | Estella     | Ledgley          | Battye           | ONAT292293W96 |
-|         768 |       372 | Melinda     | Rawet            | Blow             | GFQI220932Q89 |
-|         779 |       508 | Clarita     | Mechi            | Yanshonok        | TXDH210317W14 |
-|         780 |       241 | Rheta       | Gascar           | Balf             | ANRQ358836W30 |
-|         781 |       850 | Monika      | Baytrop          | Wilne            | SBZX438327K92 |
-|         790 |       762 | Tedda       | Hopfner          | Brockman         | OEMG184798E78 |
-|         792 |       425 | Harrietta   | MacAllen         | Roblin           | VGZS342735B58 |
-|         799 |       537 | Inna        | Simmell          | Castano          | WIOP470151T36 |
-|         801 |       820 | Peria       | Ruppel           | Thomassen        | DWQV008520A29 |
-|         803 |       713 | Rena        | Arthurs          | Dutton           | MWGD080670Y64 |
-|         804 |       899 | Krystyna    | Overstone        | Lesley           | KPQZ626712D74 |
-|         811 |        33 | Amelina     | Greenfield       | Jolliffe         | LPRX842249C60 |
-|         814 |       106 | Sephira     | Burberye         | Brookz           | HSTF641931F96 |
-|         817 |       704 | Augusta     | MacCheyne        | Hellens          | XTGY210508F32 |
-|         821 |       246 | Helsa       | Bootherstone     | McIlenna         | QWDR379920M52 |
-|         822 |       187 | Camila      | Calow            | Peagrim          | GPWC735831D26 |
-|         825 |       706 | Amata       | Whitta           | McKinlay         | UXKJ881358Z96 |
-|         849 |       949 | Gelya       | Mottley          | De Pero          | IEAJ077316D41 |
-|         856 |       557 | Velma       | Phillimore       | Geck             | LDOF647212L80 |
-|         879 |       388 | Reena       | Chaplyn          | Skingle          | ENXH084879A42 |
-|         883 |       567 | Lira        | Haxley           | Petrovsky        | XVUO908133P99 |
-|         887 |       846 | Babita      | Cramp            | Peete            | SGYX618085C34 |
-|         891 |       228 | Rebecca     | Simecek          | Lecky            | ZJHC109922Z77 |
-|         892 |       842 | Lucinda     | Avrahamov        | Scafe            | NVIJ806580A41 |
-|         895 |       331 | Lorinda     | Le land          | Livick           | QHPM116044Z95 |
-|         903 |       864 | Frederica   | Duffield         | Kollas           | SWDT671919I65 |
-|         905 |       347 | Allianora   | Proschek         | Betje            | LHWT257752Z85 |
-|         911 |       482 | Aurelia     | Stepto           | Yetton           | PCAV885315T66 |
-|         916 |       342 | Valentia    | Vinten           | Tripney          | HUWA662653L44 |
-|         918 |       293 | Emelda      | Pinfold          | Frankes          | SWKB305932O63 |
-|         921 |       350 | Antonina    | Piotrowski       | Posen            | XNUY925922P47 |
-|         929 |       989 | Orsa        | Angeli           | Haszard          | WTLA351176X54 |
-|         930 |       928 | Rebecka     | Rushworth        | Sofe             | XEGT256077M10 |
-|         936 |        54 | Austina     | Melhuish         | Ounsworth        | OCRP896435Y34 |
-|         938 |       182 | Rycca       | MacKellen        | Lee              | QZFM233330L10 |
-|         939 |       725 | Oneida      | Carnall          | Lavell           | TNKA969901O40 |
-|         940 |       692 | Corena      | Davy             | Fraczak          | DPYI148640R59 |
-|         943 |       263 | Celka       | Helder           | Maberley         | TDRA365570I31 |
-|         945 |       963 | Elaina      | Cordes           | Danilov          | DJRY290427T78 |
-|         946 |        92 | Felisha     | Heales           | Josephson        | CXIR097305C29 |
-|         961 |       597 | Annadiana   | Hulme            | Witherington     | TZVA911739F02 |
-|         963 |       664 | Ronda       | Kall             | Bollis           | PMER485165B79 |
-|         964 |       907 | Serena      | Janczewski       | Coatham          | WZRX125411Z83 |
-|         967 |       160 | Saundra     | Knight           | Grunbaum         | EJIA947174G94 |
-|         978 |       499 | Isahella    | Diter            | Sebastian        | VBNZ945061Q36 |
-|         981 |       184 | Stevana     | Marchington      | Fonquernie       | XCRT471505X85 |
-|         992 |        91 | Bella       | Devo             | Saxelby          | LNQS778477I84 |
-|         997 |       489 | Latashia    | Sircomb          | Insall           | MUHK107670P13 |
-+-------------+-----------+-------------+------------------+------------------+---------------+
-201 rows in set (0.12 sec)
+SELECT * FROM empleado WHERE nombre LIKE '%a';
+# +-------------+-----------+-------------+------------------+------------------+---------------+
+# | id_empleado | id_puesto | nombre      | apellido_paterno | apellido_materno | rfc           |
+# +-------------+-----------+-------------+------------------+------------------+---------------+
+# |           1 |       235 | Enrichetta  | Bodechon         | Ivkovic          | CLKQ293450Y89 |
+# |          16 |       146 | Yulma       | Biskupek         | Gallety          | LEXT995305G96 |
+# |          29 |       594 | Klara       | Issatt           | Plampeyn         | NWUO816774Z70 |
+# |          30 |       258 | Mirabella   | Murden           | Bexon            | QDHW540143A35 |
+# |          38 |        62 | Allina      | Mea              | O'Bradain        | OLKX206084U54 |
+# |          44 |       584 | Susana      | Polack           | Fermor           | OHJB687925X00 |
+# |          48 |       452 | Decca       | McAlinden        | Signorelli       | VINB499630H31 |
+# |          51 |       264 | Joshia      | Emes             | Theze            | NSPZ195280H40 |
+# |          60 |       532 | Guinna      | Troughton        | Daubney          | DHLW940247W65 |
+# |          68 |       853 | Aurelia     | Lissandre        | Stedman          | WFVQ405975J58 |
+# |          74 |        62 | Ofelia      | Schimank         | Gamon            | POKQ786943H81 |
+# |          87 |       702 | Luciana     | Broadbridge      | Wickey           | WVEG877882C28 |
+# |         101 |       272 | Zelma       | Seefus           | Gresley          | LSPB214787J14 |
+# |         103 |       233 | Sada        | Tenwick          | Connachan        | SDYB597883E65 |
+# |         104 |        94 | Feliza      | Morston          | Scawn            | CAXP093406B51 |
+# |         113 |        14 | Agneta      | Viccary          | Bateson          | KUNS092257C26 |
+# |         114 |        37 | Vivia       | Sharpling        | Dickman          | ZUAD515720N91 |
+# |         116 |       940 | Nana        | Baumler          | Lyte             | CNZF786183P53 |
+# |         135 |       110 | Sylvia      | Stenner          | Jouaneton        | CZRF470924J45 |
+# |         137 |       561 | Bethena     | Joly             | Faldo            | QKZE472918F72 |
+# |         141 |       763 | Hyacinthia  | Petz             | Cirlos           | KBEO062275Y23 |
+# |         144 |       848 | Madella     | Escalero         | Wenzel           | LHVZ394607R96 |
+# |         148 |       209 | Teirtza     | Slack            | Beloe            | TWNE896154J25 |
+# |         150 |       242 | Theodosia   | Tomanek          | Coopper          | WOJC577448N95 |
+# |         154 |       427 | Neda        | Bogays           | Loosley          | FYCB281953F12 |
+# |         155 |       490 | Rubina      | Branigan         | Chumley          | APWG607752U21 |
+# |         156 |       119 | Goldina     | Fickling         | Huton            | NEPW286884H49 |
+# |         161 |       726 | Ariana      | Waldera          | Olerenshaw       | ZXHN369980U53 |
+# |         166 |         6 | Della       | Fulbrook         | Harrie           | APGJ840909W11 |
+# |         174 |       258 | Melantha    | Ginni            | Wolfindale       | HPDY799736A62 |
+# |         176 |       155 | Jehanna     | Schmuhl          | Spight           | GHKU089385S95 |
+# |         181 |       491 | Hermina     | MacConnal        | Gavey            | LUCB737962C47 |
+# |         182 |       926 | Cayla       | Tolefree         | Chatto           | KJQD081108R47 |
+# |         187 |       282 | Ema         | Itzkovwich       | Duthie           | FRXW526637M66 |
+# |         190 |       581 | Adrea       | Kingston         | Rawle            | ANVO858924Z92 |
+# |         191 |       661 | Sonia       | Raiment          | Youster          | AXVC766731B10 |
+# |         202 |       775 | Martita     | Baroux           | Pitway           | GWAX539164M60 |
+# |         203 |       248 | Feodora     | Gough            | Natalie          | QDVX992804D67 |
+# |         204 |       912 | Irita       | Laurie           | Thompstone       | PCVS688880G66 |
+# |         206 |         6 | Katya       | Banbridge        | Fossitt          | ELAY505814Q48 |
+# |         216 |       362 | Phyllida    | Mathan           | Bittlestone      | SGQO273998B88 |
+# |         226 |       209 | Bellina     | Elwill           | Revey            | OKEA355243B15 |
+# |         231 |       484 | Agnola      | Shutler          | Clendennen       | CEHO015106G68 |
+# |         254 |       408 | Hermia      | Batho            | Behrens          | WYDZ580769F19 |
+# |         259 |       955 | Trisha      | Brooke           | Attarge          | IULO681220H65 |
+# |         264 |       390 | Odessa      | Grubbe           | Friday           | JQBZ698868N69 |
+# |         270 |       908 | Elfrida     | Saunier          | Caudray          | FVGT541978A33 |
+# |         281 |       380 | Claudia     | Cammish          | Dmitriev         | PFJI356855W02 |
+# |         291 |        95 | Allegra     | Ciepluch         | Sidsaff          | NSRM333041N84 |
+# |         300 |       428 | Matilda     | Colquhoun        | Inge             | SUJM985549E80 |
+# |         302 |       817 | Angelika    | Kember           | Klesl            | DVWH453301E30 |
+# |         303 |       561 | Petrina     | Dowglass         | Tottle           | PQEC462614Q84 |
+# |         309 |       360 | Corina      | Piwell           | Gross            | RNWT294210I40 |
+# |         314 |       300 | Catlaina    | Saines           | Barttrum         | VMBH558627F42 |
+# |         324 |       649 | Brigitta    | Pitkeathly       | Cluely           | HSJV922677F86 |
+# |         333 |       731 | Prisca      | Beresford        | Congdon          | RZGT674132U20 |
+# |         338 |       606 | Albina      | Boyland          | Collens          | TPJV121605B24 |
+# |         340 |       248 | Daria       | Reuter           | Nowland          | WOLK390698L94 |
+# |         347 |       858 | Rhianna     | Randlesome       | Sturr            | OAQX878390D72 |
+# |         351 |       751 | Conchita    | Catling          | Okie             | EOXD289370Y81 |
+# |         356 |       605 | Melosa      | Spavins          | Hesse            | FDJP585948D78 |
+# |         357 |       410 | Gavra       | Bette            | Cozins           | YQLV431781I98 |
+# |         362 |       478 | Ariella     | Crake            | Blunsden         | NJSM002269V68 |
+# |         366 |       184 | Correna     | Webburn          | Tiery            | ESPL266091F14 |
+# |         369 |       339 | Giuditta    | Chicchetto       | Helbeck          | NMFW494417N54 |
+# |         377 |       468 | Rasla       | Brou             | Burlingham       | VZUD996301F42 |
+# |         378 |       200 | Damita      | Fishburn         | Rait             | WQZR682964E50 |
+# |         382 |       196 | Sonya       | Aldcorn          | Crofts           | REGA338960L43 |
+# |         388 |       924 | Giuditta    | Domelow          | Brum             | LTQK598004S92 |
+# |         389 |       396 | Chiarra     | Feldbrin         | Malt             | CDTS611416O25 |
+# |         391 |       354 | Quintina    | Semper           | Dwelly           | VSUD274785Y76 |
+# |         402 |        74 | Othilia     | Signe            | Wadforth         | TPEU887063N71 |
+# |         403 |       367 | Adora       | Slowcock         | Ceschelli        | HJIN868748B84 |
+# |         405 |       138 | Emalia      | Stirrip          | Woodeson         | QYSL651483Z78 |
+# |         412 |       789 | Orsa        | Knappitt         | Lemanu           | MYIR323187W36 |
+# |         413 |       433 | Julianna    | Gecke            | Guille           | WVTI176350P68 |
+# |         417 |       124 | Odella      | Grenshiels       | Padfield         | IAVF216772E32 |
+# |         419 |       125 | Milka       | Benninck         | Le Sieur         | UNSA091919X38 |
+# |         420 |       690 | Jacquenetta | Broggelli        | Flacknell        | MDYG190806F87 |
+# |         423 |        65 | Nikola      | Trouncer         | Twigge           | TMIC021452S09 |
+# |         432 |       207 | Hestia      | Barlace          | Aimer            | ASXM428955E06 |
+# |         441 |       450 | Myrilla     | Hathaway         | Thebe            | OYTF089854O67 |
+# |         442 |       717 | Rubia       | McChesney        | Ellaman          | QKSH780732L50 |
+# |         445 |       626 | Aarika      | Pinder           | Ramard           | OWHI207507L50 |
+# |         446 |       171 | Moyna       | Yeatman          | Duffrie          | PBUK517962J58 |
+# |         470 |       868 | Lolita      | Elloit           | Ghion            | VRPG236311X99 |
+# |         474 |       346 | Ofilia      | Chestle          | Tinston          | NSTY101576D12 |
+# |         475 |       428 | Tarra       | Duckham          | Filchakov        | UCBK992247L18 |
+# |         476 |       197 | Helaina     | Sire             | Mascall          | UPJX396352B86 |
+# |         479 |       546 | Johnna      | Lamping          | Parcells         | XGNM863838T12 |
+# |         484 |       783 | Leshia      | Dutt             | Childers         | PUSQ132716A88 |
+# |         487 |       428 | Charlotta   | Padbery          | Shellsheere      | DGSR197987M39 |
+# |         491 |       179 | Adrianna    | Kirkland         | Potteril         | MAIL000696B20 |
+# |         495 |       410 | Genna       | Causton          | Edmett           | AYMG189843O33 |
+# |         498 |       946 | Blancha     | Miko             | Dalla            | RMTP820682R11 |
+# |         505 |       286 | Guillema    | Prentice         | Wethers          | ZGTS218924U73 |
+# |         546 |       930 | Amalia      | Leglise          | Spinke           | MVCP113829B05 |
+# |         549 |       185 | Lydia       | Hainge           | Sumbler          | JMOA547185W26 |
+# |         550 |       512 | Koressa     | Eustice          | Pogue            | QKST857657F50 |
+# |         551 |       753 | Gloria      | Godbert          | Robbel           | OLHY352557V75 |
+# |         553 |       730 | Bernadina   | Salvador         | Kerans           | MWYN896771E17 |
+# |         564 |       687 | Trina       | Wollrauch        | Ramey            | ZEYJ527376S78 |
+# |         569 |       871 | Arlana      | Fanstone         | Brothers         | TARG400578M92 |
+# |         571 |       865 | Nora        | O'Suaird         | MacAskie         | LKTM863284G29 |
+# |         574 |       889 | Margaretha  | Woodrow          | Van der Son      | RVDQ721468F14 |
+# |         579 |       748 | Sada        | Madle            | Neath            | XRAN981788T74 |
+# |         580 |       589 | Marietta    | Rupert           | Foggarty         | VXNT468062Y38 |
+# |         583 |       864 | Alyosha     | Foottit          | Hankey           | KUXG434650N64 |
+# |         584 |       331 | Kylila      | MacNeilly        | Bonner           | FALC555993A58 |
+# |         587 |       857 | Sidonia     | Rooson           | Kneel            | AJPM216956L73 |
+# |         593 |       495 | Gratiana    | Edelheit         | Gask             | ENCF292706Y39 |
+# |         596 |       741 | Zenia       | Gearing          | Barajas          | HKCO655558I12 |
+# |         600 |       415 | Teresita    | Knipe            | Boreham          | IVJL637432F66 |
+# |         607 |       943 | Grazia      | Hordell          | Simonaitis       | ZJRT089940A46 |
+# |         617 |       618 | Orella      | Blankett         | Tabord           | ISKN351640P30 |
+# |         624 |       299 | Lara        | Tamplin          | Tolchard         | OZIP916792K89 |
+# |         630 |       492 | Annadiana   | Yurukhin         | McEttigen        | CIVG929907U72 |
+# |         632 |       203 | Melania     | Beels            | Rizzolo          | ZTSF980067V84 |
+# |         635 |        57 | Giacinta    | Rentilll         | Dallan           | MFTB406398G41 |
+# |         638 |       699 | Stella      | Florentine       | Wellard          | MQOX597488R77 |
+# |         640 |       583 | Katina      | Lepick           | Peeters          | MYTF104594O21 |
+# |         641 |       664 | Essa        | Charte           | Raubenheimer     | NJAB526219K75 |
+# |         642 |       434 | Mela        | Oakenfull        | Lanmeid          | UXGQ962492V26 |
+# |         646 |       321 | Franciska   | McClosh          | Ronald           | WSTC262334S83 |
+# |         647 |       708 | Zora        | Lindsay          | Tofanelli        | JEQS715894Y48 |
+# |         653 |       113 | Reba        | Morshead         | Goakes           | BIPN747304U48 |
+# |         654 |       901 | Bea         | Allaway          | Haggata          | SWKX540681V20 |
+# |         658 |       523 | Petronia    | Yeabsley         | Airdrie          | KYQB494566B37 |
+# |         667 |       499 | Minna       | Willcott         | Yendall          | PZJG071133Z25 |
+# |         668 |        57 | Karia       | Lardiner         | Jobb             | PQWH192716P51 |
+# |         673 |        93 | Lissa       | Reschke          | Sheringham       | WVIS504842F31 |
+# |         675 |       850 | Myca        | Joao             | Banghe           | GNXL987206R43 |
+# |         677 |       711 | Lenka       | Latham           | Wyeth            | BIGW500163K51 |
+# |         680 |       882 | Arlana      | Merioth          | Sellar           | EFOW416889B20 |
+# |         691 |       197 | Miguelita   | Gyrgorcewicx     | Baitson          | FHUQ255183C40 |
+# |         693 |       812 | Marcellina  | Rennebach        | O'Fairy          | KSXC084833K49 |
+# |         701 |       712 | Odetta      | Turpey           | Saterweyte       | MZDP838003U97 |
+# |         702 |       120 | Marketa     | Marcone          | Lalley           | BOWR779925S05 |
+# |         709 |       939 | Almeda      | Goodship         | Scroxton         | FCPY021086T81 |
+# |         711 |       691 | Eustacia    | Hallet           | Orrell           | AVPK310066T87 |
+# |         715 |       906 | Lelia       | Dabourne         | Mossop           | GHDW677979U76 |
+# |         724 |       729 | Sondra      | Brownill         | Haggerty         | JHWQ625311N70 |
+# |         731 |       418 | Moina       | Yesson           | Jellyman         | ZBHV480356S19 |
+# |         732 |       614 | Delphinia   | Cumes            | Powderham        | DYXA987932L39 |
+# |         733 |       905 | Marla       | Morison          | Radbone          | GINF874329W18 |
+# |         737 |       536 | Correna     | Dudleston        | Rudyard          | XAYM530480R40 |
+# |         739 |       701 | Elicia      | Hatch            | Chuck            | MPDF042882A21 |
+# |         741 |       216 | Charita     | Levi             | Habbergham       | ETJM050841M79 |
+# |         744 |        32 | Dulciana    | Livick           | Downton          | ENLG744684D91 |
+# |         747 |       465 | Miguelita   | Grimsdyke        | Nardi            | SUWQ930882K31 |
+# |         751 |       932 | Dorotea     | Lyle             | Polsin           | FUGR421058A88 |
+# |         761 |       895 | Arabela     | Rice             | Geikie           | RUZJ847792Y79 |
+# |         763 |       945 | Margareta   | McElwee          | Venediktov       | QNGU443101F44 |
+# |         767 |       874 | Estella     | Ledgley          | Battye           | ONAT292293W96 |
+# |         768 |       372 | Melinda     | Rawet            | Blow             | GFQI220932Q89 |
+# |         779 |       508 | Clarita     | Mechi            | Yanshonok        | TXDH210317W14 |
+# |         780 |       241 | Rheta       | Gascar           | Balf             | ANRQ358836W30 |
+# |         781 |       850 | Monika      | Baytrop          | Wilne            | SBZX438327K92 |
+# |         790 |       762 | Tedda       | Hopfner          | Brockman         | OEMG184798E78 |
+# |         792 |       425 | Harrietta   | MacAllen         | Roblin           | VGZS342735B58 |
+# |         799 |       537 | Inna        | Simmell          | Castano          | WIOP470151T36 |
+# |         801 |       820 | Peria       | Ruppel           | Thomassen        | DWQV008520A29 |
+# |         803 |       713 | Rena        | Arthurs          | Dutton           | MWGD080670Y64 |
+# |         804 |       899 | Krystyna    | Overstone        | Lesley           | KPQZ626712D74 |
+# |         811 |        33 | Amelina     | Greenfield       | Jolliffe         | LPRX842249C60 |
+# |         814 |       106 | Sephira     | Burberye         | Brookz           | HSTF641931F96 |
+# |         817 |       704 | Augusta     | MacCheyne        | Hellens          | XTGY210508F32 |
+# |         821 |       246 | Helsa       | Bootherstone     | McIlenna         | QWDR379920M52 |
+# |         822 |       187 | Camila      | Calow            | Peagrim          | GPWC735831D26 |
+# |         825 |       706 | Amata       | Whitta           | McKinlay         | UXKJ881358Z96 |
+# |         849 |       949 | Gelya       | Mottley          | De Pero          | IEAJ077316D41 |
+# |         856 |       557 | Velma       | Phillimore       | Geck             | LDOF647212L80 |
+# |         879 |       388 | Reena       | Chaplyn          | Skingle          | ENXH084879A42 |
+# |         883 |       567 | Lira        | Haxley           | Petrovsky        | XVUO908133P99 |
+# |         887 |       846 | Babita      | Cramp            | Peete            | SGYX618085C34 |
+# |         891 |       228 | Rebecca     | Simecek          | Lecky            | ZJHC109922Z77 |
+# |         892 |       842 | Lucinda     | Avrahamov        | Scafe            | NVIJ806580A41 |
+# |         895 |       331 | Lorinda     | Le land          | Livick           | QHPM116044Z95 |
+# |         903 |       864 | Frederica   | Duffield         | Kollas           | SWDT671919I65 |
+# |         905 |       347 | Allianora   | Proschek         | Betje            | LHWT257752Z85 |
+# |         911 |       482 | Aurelia     | Stepto           | Yetton           | PCAV885315T66 |
+# |         916 |       342 | Valentia    | Vinten           | Tripney          | HUWA662653L44 |
+# |         918 |       293 | Emelda      | Pinfold          | Frankes          | SWKB305932O63 |
+# |         921 |       350 | Antonina    | Piotrowski       | Posen            | XNUY925922P47 |
+# |         929 |       989 | Orsa        | Angeli           | Haszard          | WTLA351176X54 |
+# |         930 |       928 | Rebecka     | Rushworth        | Sofe             | XEGT256077M10 |
+# |         936 |        54 | Austina     | Melhuish         | Ounsworth        | OCRP896435Y34 |
+# |         938 |       182 | Rycca       | MacKellen        | Lee              | QZFM233330L10 |
+# |         939 |       725 | Oneida      | Carnall          | Lavell           | TNKA969901O40 |
+# |         940 |       692 | Corena      | Davy             | Fraczak          | DPYI148640R59 |
+# |         943 |       263 | Celka       | Helder           | Maberley         | TDRA365570I31 |
+# |         945 |       963 | Elaina      | Cordes           | Danilov          | DJRY290427T78 |
+# |         946 |        92 | Felisha     | Heales           | Josephson        | CXIR097305C29 |
+# |         961 |       597 | Annadiana   | Hulme            | Witherington     | TZVA911739F02 |
+# |         963 |       664 | Ronda       | Kall             | Bollis           | PMER485165B79 |
+# |         964 |       907 | Serena      | Janczewski       | Coatham          | WZRX125411Z83 |
+# |         967 |       160 | Saundra     | Knight           | Grunbaum         | EJIA947174G94 |
+# |         978 |       499 | Isahella    | Diter            | Sebastian        | VBNZ945061Q36 |
+# |         981 |       184 | Stevana     | Marchington      | Fonquernie       | XCRT471505X85 |
+# |         992 |        91 | Bella       | Devo             | Saxelby          | LNQS778477I84 |
+# |         997 |       489 | Latashia    | Sircomb          | Insall           | MUHK107670P13 |
+# +-------------+-----------+-------------+------------------+------------------+---------------+
+# 201 rows in set (0.12 sec)
 
 
-mysql> SELECT * FROM empleado WHERE nombre LIKE 'M%a';
-+-------------+-----------+------------+------------------+------------------+---------------+
-| id_empleado | id_puesto | nombre     | apellido_paterno | apellido_materno | rfc           |
-+-------------+-----------+------------+------------------+------------------+---------------+
-|          30 |       258 | Mirabella  | Murden           | Bexon            | QDHW540143A35 |
-|         144 |       848 | Madella    | Escalero         | Wenzel           | LHVZ394607R96 |
-|         174 |       258 | Melantha   | Ginni            | Wolfindale       | HPDY799736A62 |
-|         202 |       775 | Martita    | Baroux           | Pitway           | GWAX539164M60 |
-|         300 |       428 | Matilda    | Colquhoun        | Inge             | SUJM985549E80 |
-|         356 |       605 | Melosa     | Spavins          | Hesse            | FDJP585948D78 |
-|         419 |       125 | Milka      | Benninck         | Le Sieur         | UNSA091919X38 |
-|         441 |       450 | Myrilla    | Hathaway         | Thebe            | OYTF089854O67 |
-|         446 |       171 | Moyna      | Yeatman          | Duffrie          | PBUK517962J58 |
-|         574 |       889 | Margaretha | Woodrow          | Van der Son      | RVDQ721468F14 |
-|         580 |       589 | Marietta   | Rupert           | Foggarty         | VXNT468062Y38 |
-|         632 |       203 | Melania    | Beels            | Rizzolo          | ZTSF980067V84 |
-|         642 |       434 | Mela       | Oakenfull        | Lanmeid          | UXGQ962492V26 |
-|         667 |       499 | Minna      | Willcott         | Yendall          | PZJG071133Z25 |
-|         675 |       850 | Myca       | Joao             | Banghe           | GNXL987206R43 |
-|         691 |       197 | Miguelita  | Gyrgorcewicx     | Baitson          | FHUQ255183C40 |
-|         693 |       812 | Marcellina | Rennebach        | O'Fairy          | KSXC084833K49 |
-|         702 |       120 | Marketa    | Marcone          | Lalley           | BOWR779925S05 |
-|         731 |       418 | Moina      | Yesson           | Jellyman         | ZBHV480356S19 |
-|         733 |       905 | Marla      | Morison          | Radbone          | GINF874329W18 |
-|         747 |       465 | Miguelita  | Grimsdyke        | Nardi            | SUWQ930882K31 |
-|         763 |       945 | Margareta  | McElwee          | Venediktov       | QNGU443101F44 |
-|         768 |       372 | Melinda    | Rawet            | Blow             | GFQI220932Q89 |
-|         781 |       850 | Monika     | Baytrop          | Wilne            | SBZX438327K92 |
-+-------------+-----------+------------+------------------+------------------+---------------+
-24 rows in set (0.11 sec)
+SELECT * FROM empleado WHERE nombre LIKE 'M%a';
+# +-------------+-----------+------------+------------------+------------------+---------------+
+# | id_empleado | id_puesto | nombre     | apellido_paterno | apellido_materno | rfc           |
+# +-------------+-----------+------------+------------------+------------------+---------------+
+# |          30 |       258 | Mirabella  | Murden           | Bexon            | QDHW540143A35 |
+# |         144 |       848 | Madella    | Escalero         | Wenzel           | LHVZ394607R96 |
+# |         174 |       258 | Melantha   | Ginni            | Wolfindale       | HPDY799736A62 |
+# |         202 |       775 | Martita    | Baroux           | Pitway           | GWAX539164M60 |
+# |         300 |       428 | Matilda    | Colquhoun        | Inge             | SUJM985549E80 |
+# |         356 |       605 | Melosa     | Spavins          | Hesse            | FDJP585948D78 |
+# |         419 |       125 | Milka      | Benninck         | Le Sieur         | UNSA091919X38 |
+# |         441 |       450 | Myrilla    | Hathaway         | Thebe            | OYTF089854O67 |
+# |         446 |       171 | Moyna      | Yeatman          | Duffrie          | PBUK517962J58 |
+# |         574 |       889 | Margaretha | Woodrow          | Van der Son      | RVDQ721468F14 |
+# |         580 |       589 | Marietta   | Rupert           | Foggarty         | VXNT468062Y38 |
+# |         632 |       203 | Melania    | Beels            | Rizzolo          | ZTSF980067V84 |
+# |         642 |       434 | Mela       | Oakenfull        | Lanmeid          | UXGQ962492V26 |
+# |         667 |       499 | Minna      | Willcott         | Yendall          | PZJG071133Z25 |
+# |         675 |       850 | Myca       | Joao             | Banghe           | GNXL987206R43 |
+# |         691 |       197 | Miguelita  | Gyrgorcewicx     | Baitson          | FHUQ255183C40 |
+# |         693 |       812 | Marcellina | Rennebach        | O'Fairy          | KSXC084833K49 |
+# |         702 |       120 | Marketa    | Marcone          | Lalley           | BOWR779925S05 |
+# |         731 |       418 | Moina      | Yesson           | Jellyman         | ZBHV480356S19 |
+# |         733 |       905 | Marla      | Morison          | Radbone          | GINF874329W18 |
+# |         747 |       465 | Miguelita  | Grimsdyke        | Nardi            | SUWQ930882K31 |
+# |         763 |       945 | Margareta  | McElwee          | Venediktov       | QNGU443101F44 |
+# |         768 |       372 | Melinda    | Rawet            | Blow             | GFQI220932Q89 |
+# |         781 |       850 | Monika     | Baytrop          | Wilne            | SBZX438327K92 |
+# +-------------+-----------+------------+------------------+------------------+---------------+
+# 24 rows in set (0.11 sec)
 
 
-mysql> SELECT * FROM empleado WHERE nombre LIKE 'M_losa';
-+-------------+-----------+--------+------------------+------------------+---------------+
-| id_empleado | id_puesto | nombre | apellido_paterno | apellido_materno | rfc           |
-+-------------+-----------+--------+------------------+------------------+---------------+
-|         356 |       605 | Melosa | Spavins          | Hesse            | FDJP585948D78 |
-+-------------+-----------+--------+------------------+------------------+---------------+
-1 row in set (0.11 sec)
+SELECT * FROM empleado WHERE nombre LIKE 'M_losa';
+# +-------------+-----------+--------+------------------+------------------+---------------+
+# | id_empleado | id_puesto | nombre | apellido_paterno | apellido_materno | rfc           |
+# +-------------+-----------+--------+------------------+------------------+---------------+
+# |         356 |       605 | Melosa | Spavins          | Hesse            | FDJP585948D78 |
+# +-------------+-----------+--------+------------------+------------------+---------------+
+# 1 row in set (0.11 sec)
