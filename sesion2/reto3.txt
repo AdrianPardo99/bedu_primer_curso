@@ -1,0 +1,14 @@
+mysql> SELECT nombre as Puesto, count(*) as Cantidad FROM puesto GROUP BY nombre;
+181 rows in set (0.11 sec)
+
+
+mysql> SELECT nombre as Puesto, SUM(salario) FROM puesto GROUP BY nombre;
+181 rows in set (0.11 sec)
+
+
+mysql> SELECT id_empleado AS Empleado, COUNT(*) AS nVentas FROM venta GROUP BY id_empleado;
+642 rows in set (0.11 sec)
+
+
+mysql> SELECT id_articulo AS Articulo, COUNT(*) AS nVentas FROM venta GROUP BY id_articulo;
+618 rows in set (0.11 sec)

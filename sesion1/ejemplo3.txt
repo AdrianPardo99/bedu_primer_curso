@@ -1,0 +1,36 @@
+# Ejemplo 3
+SELECT nombre FROM empleado;
+# Output de 1000 registros de solo nombres
+
+SELECT * FROM empleado;
+# Output de 1000 registros de todos los campos de la tabla empleado
+
+
+SELECT *FROM empleado WHERE apellido_paterno = 'Risom';
+# +-------------+-----------+--------+------------------+------------------+---------------+
+# | id_empleado | id_puesto | nombre | apellido_paterno | apellido_materno | rfc           |
+# +-------------+-----------+--------+------------------+------------------+---------------+
+# |           5 |       668 | Gnni   | Risom            | Kalinowsky       | YTLO032309Z47 |
+# +-------------+-----------+--------+------------------+------------------+---------------+
+# 1 row in set (0.11 sec)
+
+SELECT * FROM empleado WHERE id_puesto > 100;
+# Output de 892 registros cuyo id_puesto sea estrictamente mayor a 100
+
+SELECT * FROM empleado WHERE id_puesto >= 100 AND id_puesto <= 200;
+# Output de 100 registros cuyo id_puesto esta entre los valores 100 y 200
+
+SELECT * FROM empleado WHERE id_puesto = 100 OR id_puesto = 200;
+# +-------------+-----------+--------+------------------+------------------+---------------+
+# | id_empleado | id_puesto | nombre | apellido_paterno | apellido_materno | rfc           |
+# +-------------+-----------+--------+------------------+------------------+---------------+
+# |         410 |       100 | Honor  | Parsonage        | Lowdyane         | YCWP007255G64 |
+# |         307 |       200 | Suzy   | Ingerfield       | Aire             | SJUT182565W08 |
+# |         310 |       200 | Harvey | Deeney           | Kennerley        | ZAHQ035377H15 |
+# |         378 |       200 | Damita | Fishburn         | Rait             | WQZR682964E50 |
+# +-------------+-----------+--------+------------------+------------------+---------------+
+# 4 rows in set (0.12 sec)
+# Output de 4 registros cuyo id_puesto es 100 o 200
+
+SELECT * FROM empleado WHERE id_puesto IN (100,200);
+# Same as the top query

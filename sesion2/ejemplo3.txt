@@ -1,0 +1,10 @@
+mysql> SELECT nombre, sum(precio) AS total FROM articulo GROUP BY nombre;
+840 rows in set (0.23 sec)
+
+
+mysql> SELECT nombre, count(*) AS cantidad FROM articulo GROUP BY nombre ORDER BY cantidad DESC;
+840 rows in set (0.23 sec)
+
+
+mysql> SELECT nombre, min(salario) AS menor, max(salario) AS mayor FROM puesto GROUP BY nombre;
+181 rows in set (0.23 sec)

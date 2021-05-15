@@ -1,0 +1,42 @@
+mysql> SELECT id_puesto FROM puesto WHERE nombre = 'Junior Executive';
++-----------+
+| id_puesto |
++-----------+
+|         2 |
+|        79 |
+|       152 |
+|       161 |
+|       392 |
+|       511 |
+|       725 |
+|       948 |
++-----------+
+8 rows in set (0.11 sec)
+
+
+mysql> SELECT * FROM empleado WHERE id_puesto IN     (SELECT id_puesto    FROM puesto    WHERE nombre = 'Junior Executive');
++-------------+-----------+----------+------------------+------------------+---------------+
+| id_empleado | id_puesto | nombre   | apellido_paterno | apellido_materno | rfc           |
++-------------+-----------+----------+------------------+------------------+---------------+
+|         119 |        79 | Cad      | Sambedge         | Goulborn         | EAGM298123A66 |
+|         465 |        79 | Ranice   | Halpin           | Moughton         | QXWD548036T39 |
+|         183 |       511 | Torrence | Kimble           | Isherwood        | JGXP387072N64 |
+|         626 |       511 | Alix     | Reede            | Gait             | TWPQ415158S07 |
+|         489 |       725 | Corey    | Merryman         | Rude             | ZAMX585180Z05 |
+|         939 |       725 | Oneida   | Carnall          | Lavell           | TNKA969901O40 |
+|         364 |       948 | Ermin    | Davidow          | Catonnet         | QEAG951705M07 |
++-------------+-----------+----------+------------------+------------------+---------------+
+7 rows in set (0.11 sec)
+
+
+
+mysql> SELECT clave, id_articulo, count(*) AS cantidad FROM venta GROUP BY clave, id_articulo ORDER BY clave;
+969 rows in set (0.22 sec)
+
+
+mysql> SELECT id_articulo, min(cantidad), max(cantidad) FROM (SELECT clave, id_articulo, count(*) AS cantidad FROM venta GROUP BY clave, id_articulo ORDER BY clave) AS subconsulta GROUP BY id_articulo;
+618 rows in set (0.11 sec)
+
+
+mysql> SELECT nombre, apellido_paterno, (SELECT salario FROM puesto WHERE id_puesto = e.id_puesto) AS sueldo FROM empleado AS e;
+1000 rows in set (0.22 sec)

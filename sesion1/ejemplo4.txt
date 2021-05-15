@@ -1,0 +1,116 @@
+# Ejemplo 4
+SELECT * FROM puesto ORDER BY salario DESC;
+# 1000 rows in set (0.22 sec)
+# +-----------+--------------------------------------+----------+
+# | id_puesto | nombre                               | salario  |
+# +-----------+--------------------------------------+----------+
+# |       494 | Sales Representative                 | 29996.58 |
+# |        18 | Speech Pathologist                   | 29967.17 |
+# |       487 | Analog Circuit Design manager        | 29923.95 |
+# |        79 | Junior Executive                     | 29916.06 |
+# |       893 | Technical Writer                     | 29912.53 |
+# |        39 | Help Desk Technician                 | 29879.62 |
+# |        33 | Biostatistician IV                   | 29842.41 |
+# |        91 | Research Associate                   | 29800.09 |
+# |       740 | Automation Specialist III            | 29771.91 |
+# |       153 | Accounting Assistant I               |    29770 |
+# |       979 | Food Chemist                         | 29769.81 |
+# |       898 | Accounting Assistant II              | 29724.08 |
+# |       576 | VP Product Management                |  29719.9 |
+# |       629 | Senior Editor                        |  29711.2 |
+# |        56 | Human Resources Assistant I          | 29685.55 |
+# |       596 | Business Systems Development Analyst | 29667.53 |
+# |       933 | Sales Representative                 | 29662.48 |
+# |       366 | Web Developer IV                     | 29615.38 |
+# |       432 | Computer Systems Analyst I           | 29602.29 |
+# |        31 | General Manager                      | 29561.15 |
+# |       216 | Account Executive                    | 29552.05 |
+# |       132 | Administrative Assistant II          | 29512.59 |
+# |       708 | Structural Engineer                  | 29488.39 |
+# |       870 | Speech Pathologist                   | 29420.65 |
+# |       821 | Internal Auditor                     | 29391.35 |
+# |       917 | Sales Representative                 | 29336.16 |
+# |       389 | Internal Auditor                     |  29318.7 |
+# |         7 | Accounting Assistant III             | 29257.91 |
+# |       152 | Junior Executive                     | 29226.46 |
+# |       715 | General Manager                      | 29180.99 |
+# |       168 | Product Engineer                     | 29175.25 |
+# |       501 | Technical Writer                     | 29139.82 |
+# |       832 | Senior Developer                     | 29130.04 |
+# |       744 | Project Manager                      | 29126.11 |
+# |       922 | Accounting Assistant II              | 29096.49 |
+# |       931 | Nuclear Power Engineer               | 29072.24 |
+# |       221 | Staff Scientist                      | 29052.89 |
+# |       174 | Associate Professor                  | 29040.39 |
+# |       253 | VP Quality Control                   |  29036.1 |
+# |       595 | Editor                               | 28975.83 |
+# |       823 | Actuary                              | 28967.82 |
+# |       310 | Social Worker                        | 28955.95 |
+# |       213 | Administrative Assistant I           | 28952.63 |
+# |       102 | Recruiter                            |  28929.3 |
+# |       296 | Accountant IV                        |  28920.2 |
+# |       696 | Editor                               |  28886.6 |
+# |       619 | Recruiting Manager                   | 28885.36 |
+# |       525 | Financial Advisor                    |  28842.5 |
+# |       115 | Project Manager                      | 28841.26 |
+# |       800 | Assistant Media Planner              | 28810.15 |
+# |       183 | Professor                            | 28789.65 |
+# |         3 | Director of Sales                    | 28725.56 |
+# |       410 | Senior Editor                        | 28710.97 |
+# |       776 | Budget/Accounting Analyst II         | 28698.82 |
+# |       279 | Financial Advisor                    | 28665.52 |
+
+
+
+SELECT * FROM puesto ORDER BY salario ASC;
+# 1000 rows in set (0.22 sec)
+# +-----------+--------------------------------------+----------+
+# | id_puesto | nombre                               | salario  |
++-----------+--------------------------------------+----------+
+# |       150 | Administrative Officer               | 10013.44 |
+# |       137 | Help Desk Operator                   | 10019.44 |
+# |       834 | Senior Developer                     | 10026.46 |
+# |       985 | Marketing Manager                    | 10041.21 |
+# |       994 | Professor                            | 10057.91 |
+# |       738 | Operator                             | 10086.03 |
+# |       375 | Speech Pathologist                   | 10097.26 |
+# |       208 | Financial Advisor                    | 10102.92 |
+# |       463 | Research Associate                   | 10103.08 |
+# |       211 | Community Outreach Specialist        | 10117.81 |
+# |        17 | Financial Analyst                    | 10145.15 |
+# |       660 | Office Assistant IV                  | 10147.18 |
+# |        46 | Senior Sales Associate               | 10165.54 |
+# |       765 | Engineer IV                          | 10170.77 |
+# |       289 | Social Worker                        | 10185.35 |
+# |       352 | Product Engineer                     | 10195.75 |
+# |       135 | Chemical Engineer                    | 10208.84 |
+# |       165 | Recruiting Manager                   |  10217.1 |
+# |       187 | Director of Sales                    | 10232.21 |
+# |       751 | Chief Design Engineer                | 10233.93 |
+# |       729 | Director of Sales                    |  10236.8 |
+# |       275 | Social Worker                        | 10282.27 |
+# |       161 | Junior Executive                     | 10298.53 |
+# |       591 | Tax Accountant                       | 10303.46 |
+# |       659 | Budget/Accounting Analyst IV         | 10326.54 |
+# |        53 | Accountant IV                        | 10343.33 |
+# |       850 | Cost Accountant                      | 10351.34 |
+# |       997 | Developer II                         | 10405.99 |
+# |       441 | Paralegal                            | 10432.44 |
+
+
+SELECT * FROM puesto ORDER BY salario;
+# 1000 rows in set (0.22 sec)
+# Same as the previuos query
+
+
+SELECT * FROM empleado LIMIT 5;
+# +-------------+-----------+------------+------------------+------------------+---------------+
+# | id_empleado | id_puesto | nombre     | apellido_paterno | apellido_materno | rfc           |
+# +-------------+-----------+------------+------------------+------------------+---------------+
+# |           1 |       235 | Enrichetta | Bodechon         | Ivkovic          | CLKQ293450Y89 |
+# |           2 |       659 | Morey      | Bowskill         | Metham           | SAUJ115055X38 |
+# |           3 |       745 | Jeannette  | Potes            | Heisler          | HIPN989807Q14 |
+# |           4 |       139 | Cassey     | Womersley        | Chapell          | XOFW986548J75 |
+# |           5 |       668 | Gnni       | Risom            | Kalinowsky       | YTLO032309Z47 |
+# +-------------+-----------+------------+------------------+------------------+---------------+
+# 5 rows in set (0.11 sec)

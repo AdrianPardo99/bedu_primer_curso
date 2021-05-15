@@ -1,0 +1,155 @@
+# Reto 2
+SELECT nombre FROM empleado WHERE id_puesto=4;
+# +--------+
+# | nombre |
+# +--------+
+# | Norrie |
+# | Maxy   |
+# +--------+
+# 2 rows in set (0.11 sec)
+
+
+SELECT * FROM puesto WHERE salario>10000;
+# 1000 rows in set (0.22 sec)
+# +-----------+--------------------------------------+----------+
+# | id_puesto | nombre                               | salario  |
+# +-----------+--------------------------------------+----------+
+# |         1 | Analog Circuit Design manager        | 28500.98 |
+# |         2 | Junior Executive                     | 10508.47 |
+# |         3 | Director of Sales                    | 28725.56 |
+# |         4 | Staff Scientist                      | 14965.31 |
+# |         5 | Desktop Support Technician           | 15885.41 |
+# |         6 | Budget/Accounting Analyst III        | 17131.23 |
+# |         7 | Accounting Assistant III             | 29257.91 |
+# |         8 | Programmer Analyst II                | 23223.95 |
+# |         9 | Nurse Practicioner                   |  11483.4 |
+# |        10 | Social Worker                        | 18008.12 |
+# |        11 | Teacher                              |  21472.3 |
+# |        12 | Structural Engineer                  | 10538.63 |
+# |        13 | Senior Editor                        | 11255.21 |
+# |        14 | Human Resources Manager              |  20746.5 |
+# |        15 | Web Designer IV                      | 24826.77 |
+# |        16 | Safety Technician IV                 | 27612.46 |
+# |        17 | Financial Analyst                    | 10145.15 |
+# |        18 | Speech Pathologist                   | 29967.17 |
+# |        19 | Recruiter                            | 16302.06 |
+# |        20 | Quality Control Specialist           | 22865.39 |
+# |        21 | Graphic Designer                     | 19305.16 |
+# |        22 | Computer Systems Analyst II          |  16606.5 |
+# |        23 | Social Worker                        | 11686.97 |
+# |        24 | Design Engineer                      |  23525.5 |
+# |        25 | Staff Accountant IV                  | 18265.64 |
+# |        26 | Financial Advisor                    | 12531.67 |
+# |        27 | Sales Representative                 | 26687.62 |
+# |        28 | Executive Secretary                  | 16004.18 |
+# |        29 | VP Marketing                         | 26578.02 |
+# |        30 | Software Engineer IV                 | 24672.81 |
+# |        31 | General Manager                      | 29561.15 |
+# |        32 | Clinical Specialist                  | 11845.26 |
+# |        33 | Biostatistician IV                   | 29842.41 |
+# |        34 | Help Desk Technician                 | 16890.91 |
+# |        35 | Community Outreach Specialist        | 21445.36 |
+# |        36 | Civil Engineer                       | 15679.31 |
+# |        37 | Compensation Analyst                 | 21540.92 |
+# |        38 | Senior Financial Analyst             | 11456.12 |
+# |        39 | Help Desk Technician                 | 29879.62 |
+# |        40 | VP Quality Control                   | 13685.23 |
+# |        41 | Biostatistician I                    | 27796.43 |
+# |        42 | Administrative Officer               | 15580.77 |
+# |        43 | Environmental Tech                   | 13814.65 |
+# |        44 | Database Administrator II            | 16263.36 |
+# |        45 | Programmer III                       | 15096.16 |
+# |        46 | Senior Sales Associate               | 10165.54 |
+# |        47 | Project Manager                      | 27133.83 |
+# |        48 | Occupational Therapist               | 24735.89 |
+# |        49 | Information Systems Manager          | 24466.31 |
+# |        50 | Software Test Engineer III           | 15599.51 |
+# |        51 | Project Manager                      | 18880.87 |
+# |        52 | Information Systems Manager          | 27462.67 |
+# |        53 | Accountant IV                        | 10343.33 |
+# |        54 | Dental Hygienist                     | 16095.89 |
+# |        55 | Tax Accountant                       | 19793.16 |
+
+
+SELECT*FROM articulo WHERE precio>1000 AND iva>100;
+# 787 rows in set (0.22 sec)
+# +-------------+-------------------------------------+---------+---------+----------+
+# | id_articulo | nombre                              | precio  | iva     | cantidad |
+# +-------------+-------------------------------------+---------+---------+----------+
+# |           2 | Pasta - Angel Hair                  | 4391.73 |  959.51 |      503 |
+# |           3 | Soup Campbells - Tomato Bisque      | 2991.35 |  587.59 |      604 |
+# |           4 | Wine - Valpolicella Masi            |  2625.2 |   770.1 |      575 |
+# |           5 | Mousse - Banana Chocolate           | 3701.62 |  893.46 |      248 |
+# |           7 | Nantucket - Kiwi Berry Cktl.        | 5579.47 | 1012.33 |      527 |
+# |           8 | Wine - Fontanafredda Barolo         | 2684.64 |  327.16 |      682 |
+# |           9 | Lotus Rootlets - Canned             | 1996.46 |  324.72 |      636 |
+# |          10 | Wine - Vovray Sec Domaine Huet      | 6066.99 |  890.47 |      397 |
+# |          11 | Cake - Pancake                      | 5271.11 |  821.28 |       64 |
+# |          12 | Chocolate Liqueur - Godet White     | 1616.78 |  612.63 |      929 |
+# |          13 | Appetizer - Southwestern            | 1771.99 |  248.16 |      589 |
+# |          14 | Carbonated Water - Cherry           | 3808.49 |  133.03 |      914 |
+# |          15 | Jolt Cola                           | 5875.28 |   780.3 |      437 |
+# |          16 | Oranges                             | 5005.68 |  803.38 |      898 |
+# |          19 | Peppercorns - Green                 |  5812.1 |  357.24 |      663 |
+# |          20 | Tray - 16in Rnd Blk                 |  4724.1 |  311.89 |      893 |
+# |          22 | Nut - Almond, Blanched, Ground      | 4086.49 |  154.98 |      730 |
+# |          23 | Wine - Sake                         |    3072 |  526.62 |      167 |
+# |          24 | Okra                                | 6466.53 |   805.3 |      738 |
+# |          25 | Pork - Smoked Back Bacon            | 1044.45 |  716.54 |      476 |
+# |          26 | Cheese - Montery Jack               | 4433.92 |  562.54 |      141 |
+# |          27 | Pasta - Elbows, Macaroni, Dry       |  3668.7 |  253.66 |      392 |
+# |          28 | Coffee - Frthy Coffee Crisp         | 1770.31 |  860.79 |       16 |
+# |          29 | Mountain Dew                        | 1630.22 |  980.38 |       52 |
+# |          30 | Beans - Green                       | 4735.16 |   451.6 |      247 |
+# |          31 | Bagelers - Cinn / Brown             | 1201.25 |  939.77 |      210 |
+# |          32 | Puree - Guava                       | 3270.65 |  602.96 |      263 |
+# |          34 | Sun - Dried Tomatoes                | 1716.98 |  301.25 |      778 |
+# |          36 | Coffee - French Vanilla Frothy      | 4261.52 | 1029.47 |      890 |
+# |          38 | Hipnotiq Liquor                     | 6638.33 |  977.32 |      198 |
+# |          39 | Beer - AlexANDer Kieths, Pale Ale   | 6712.71 |  299.59 |      696 |
+# |          40 | Puree - Kiwi                        | 1558.25 |  484.02 |      695 |
+# |          41 | Beef Striploin Aaa                  | 4788.21 | 1027.86 |      410 |
+# |          43 | Energy - Boo - Koo                  |  6631.4 |   881.1 |      806 |
+# |          44 | Trueblue - Blueberry Cranberry      | 2286.94 | 1078.52 |      205 |
+# |          45 | Pepper - Cayenne                    | 1166.28 |  594.94 |      609 |
+# |          48 | Soup - French Onion                 | 2585.34 |  891.52 |      204 |
+# |          49 | Crush - Orange, 355ml               | 6349.73 |  515.99 |      831 |
+# |          50 | Apple - Granny Smith                | 6373.67 |  507.58 |      690 |
+# |          52 | Foil - 4oz Custard Cup              | 3958.14 |  691.62 |      315 |
+# |          53 | Bread - 10 Grain Parisian           | 4410.58 |  771.38 |      661 |
+# |          54 | Nut - Macadamia                     | 4498.54 |  728.64 |      657 |
+# |          55 | Wine - White, Schroder And Schyl    | 5343.02 |  982.17 |      764 |
+# |          57 | Mix - Cocktail Strawberry Daiquiri  | 1681.16 |  835.41 |      122 |
+# |          58 | Lid Coffee Cup 8oz Blk              | 3241.68 |  965.66 |      198 |
+# |          59 | Lettuce - Sea / Sea Asparagus       | 6514.92 |  459.74 |      850 |
+# |          60 | Cookies Oatmeal Raisin              | 3923.92 |  963.36 |       48 |
+# |          62 | Shrimp, Dried, Small / Lb           |    1425 |   353.5 |      514 |
+# |          63 | Wine - Gewurztraminer Pierre        | 4164.17 |  103.66 |      618 |
+# |          65 | Brocolinni - Gaylan, Chinese        | 3327.51 |  358.34 |      395 |
+# |          66 | Dates                               | 6478.49 |   209.2 |      632 |
+# |          67 | Trout Rainbow Whole                 | 5648.18 |  586.53 |      897 |
+# |          68 | Beer - Sleemans Honey Brown         | 4566.34 |  885.95 |      125 |
+# |          69 | Pork - Butt, Boneless               | 5633.38 |  130.24 |      490 |
+# |          71 | Beef - Striploin Aa                 | 2769.14 |  803.92 |      252 |
+
+
+
+
+SELECT*FROM venta WHERE id_articulo IN(135,963) AND id_empleado IN(835,369);
+# +----------+-------------+-------------+-----------+---------------------+
+# | id_venta | id_articulo | id_empleado | clave     | fecha               |
+# +----------+-------------+-------------+-----------+---------------------+
+# |        7 |         963 |         369 | 47335-894 | 2019-06-08 00:00:00 |
+# |        6 |         135 |         835 | 0049-0032 | 2020-02-03 15:05:27 |
+# +----------+-------------+-------------+-----------+---------------------+
+# 2 rows in set (0.11 sec)
+
+
+SELECT*FROM venta WHERE (id_articulo=135 OR id_articulo=963) AND (id_empleado=835 OR id_empleado=369);
+# +----------+-------------+-------------+-----------+---------------------+
+# | id_venta | id_articulo | id_empleado | clave     | fecha               |
+# +----------+-------------+-------------+-----------+---------------------+
+# |        7 |         963 |         369 | 47335-894 | 2019-06-08 00:00:00 |
+# |        6 |         135 |         835 | 0049-0032 | 2020-02-03 15:05:27 |
+# +----------+-------------+-------------+-----------+---------------------+
+# 2 rows in set (0.11 sec)

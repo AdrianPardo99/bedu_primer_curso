@@ -1,0 +1,36 @@
+mysql> SELECT*FROM articulo WHERE nombre LIKE "Pasta%";
++-------------+-----------------------------------+---------+---------+----------+
+| id_articulo | nombre                            | precio  | iva     | cantidad |
++-------------+-----------------------------------+---------+---------+----------+
+|           2 | Pasta - Angel Hair                | 4391.73 |  959.51 |      503 |
+|          27 | Pasta - Elbows, Macaroni, Dry     |  3668.7 |  253.66 |      392 |
+|          70 | Pasta - Shells, Medium, Dry       |  801.74 |   773.8 |      206 |
+|          91 | Pasta - Cheese / Spinach Bauletti | 5811.44 |  619.36 |       15 |
+|         134 | Pasta - Orzo, Dry                 | 6537.91 | 1113.99 |      906 |
+|         213 | Pasta - Rotini, Colour, Dry       | 1830.13 |  373.98 |      309 |
+|         233 | Pasta - Cannelloni, Sheets, Fresh | 2316.37 |  605.55 |      307 |
+|         327 | Pasta - Cappellini, Dry           | 6994.49 |  766.18 |      828 |
+|         361 | Pasta - Penne, Rigate, Dry        | 2222.62 |  584.88 |      276 |
+|         426 | Pasta - Cappellini, Dry           | 2417.66 | 1088.42 |      411 |
+|         431 | Pasta - Orzo, Dry                 |  806.33 |  495.92 |      142 |
+|         570 | Pasta - Penne, Lisce, Dry         | 2141.06 |  809.94 |       88 |
+|         600 | Pasta - Ravioli                   | 6504.48 |  612.67 |       15 |
+|         655 | Pasta - Fettuccine, Dry           | 5369.44 |  314.75 |      344 |
+|         750 | Pasta - Bauletti, Chicken White   | 1365.92 |  786.09 |      701 |
+|         855 | Pasta - Tortellini, Fresh         |  708.96 |   61.74 |       38 |
+|         994 | Pasta - Detalini, White, Fresh    | 6445.34 |  737.63 |      238 |
++-------------+-----------------------------------+---------+---------+----------+
+17 rows in set (0.11 sec)
+
+
+mysql> SELECT*FROM articulo WHERE nombre LIKE "%Cannelloni%";
++-------------+-----------------------------------+---------+--------+----------+
+| id_articulo | nombre                            | precio  | iva    | cantidad |
++-------------+-----------------------------------+---------+--------+----------+
+|         233 | Pasta - Cannelloni, Sheets, Fresh | 2316.37 | 605.55 |      307 |
++-------------+-----------------------------------+---------+--------+----------+
+1 row in set (0.11 sec)
+
+
+mysql> SELECT*FROM articulo WHERE nombre LIKE "% - %";
+767 row in set (0.11 sec)

@@ -1,0 +1,12 @@
+# Reto 3
+SELECT*FROM puesto ORDER BY salario DESC LIMIT 5;
+# +-----------+-------------------------------+----------+
+# | id_puesto | nombre                        | salario  |
+# +-----------+-------------------------------+----------+
+# |       494 | Sales Representative          | 29996.58 |
+# |        18 | Speech Pathologist            | 29967.17 |
+# |       487 | Analog Circuit Design manager | 29923.95 |
+# |        79 | Junior Executive              | 29916.06 |
+# |       893 | Technical Writer              | 29912.53 |
+# +-----------+-------------------------------+----------+
+# 5 rows in set (0.11 sec)

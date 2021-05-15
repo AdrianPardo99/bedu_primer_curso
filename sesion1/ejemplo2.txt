@@ -1,0 +1,40 @@
+# Ejemplo 2
+SHOW DATABASES;
+# +--------------------+
+# | Database           |
+# +--------------------+
+# | classicmodels      |
+# | information_schema |
+# | tienda             |
+# +--------------------+
+# 3 rows in set (0.11 sec)
+
+
+USE tienda;
+# Database changed
+
+
+SHOW TABLES;
+# +------------------+
+# | Tables_in_tienda |
+# +------------------+
+# | articulo         |
+# | empleado         |
+# | puesto           |
+# | venta            |
+# +------------------+
+# 4 rows in set (0.12 sec)
+
+
+DESCRIBE empleado;
+# +------------------+-------------+------+-----+---------+-------+
+# | Field            | Type        | Null | Key | Default | Extra |
+# +------------------+-------------+------+-----+---------+-------+
+# | id_empleado      | int         | NO   | PRI | NULL    |       |
+# | id_puesto        | int         | NO   | MUL | NULL    |       |
+# | nombre           | varchar(45) | NO   |     | NULL    |       |
+# | apellido_paterno | varchar(45) | NO   |     | NULL    |       |
+# | apellido_materno | varchar(45) | NO   |     | NULL    |       |
+# | rfc              | varchar(13) | NO   |     | NULL    |       |
+# +------------------+-------------+------+-----+---------+-------+
+# 6 rows in set (0.11 sec)

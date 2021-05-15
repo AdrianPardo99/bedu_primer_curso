@@ -1,0 +1,21 @@
+########
+mysql> SELECT e.nombre as Nombre, p.salario as Salario FROM puesto AS p, empleado AS e WHERE e.id_puesto=p.id_puesto AND p.salario<10000;
+Empty set (0.11 sec)
+
+mysql> SELECT (SELECT nombre FROM empleado WHERE id_puesto=p.id_puesto) as Nombre, salario FROM puesto AS p WHERE salario<10000;
+Empty set (0.12 sec)
+
+mysql> SELECT nombre, apellido_paterno FROM empleado WHERE id_puesto IN (SELECT id_puesto FROM puesto WHERE salario>10000);
+#########
+
+
+SELECT id_empleado, MIN(total_ventas), MAX(total_ventas) FROM  (SELECT clave, id_empleado, COUNT(*) total_ventas FROM venta GROUP BY clave, id_empleado) AS sq GROUP BY id_empleado;
+642 rows in set (0.12 sec)
+
+###########
+mysql> SELECT e.nombre as Nombre, p.nombre AS Puesto FROM puesto p, empleado e WHERE e.id_puesto=p.id_puesto;
+1000 rows in set (0.16 sec)
+
+mysql> SELECT nombre, apellido_paterno, (SELECT nombre FROM puesto WHERE id_puesto=e.id_puesto) FROM empleado AS e;
+1000 rows in set (0.16 sec)
+##############
