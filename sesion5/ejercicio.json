@@ -1,0 +1,46 @@
+{"Ejercicio 1":"Proyeccion"}
+{"email_address":1,"phone_number":1}
+
+{"Ejercicio 2":"Proyeccion"}
+{"class_id":1}
+
+{"Ejercicio 3":"Filtro"}
+{"founded_month":10}
+
+{"Ejercicio 4":"Filtro"}
+{"founded_year":2008}
+{"Ejercicio 4":"Proyeccion"}
+{"name":1}
+
+{"Ejercicio 5":"Filtro"}
+{"author":"machine"}
+
+{"Ejercicio 6":"Filtro"}
+{"class_id":{"$in":[350, 57, 465]}}
+
+{"Ejercicio 7":"Filtro"}
+{"founded_year":2008,"founded_month":10}
+
+{"Ejercicio 8":"Filtro"}
+{"number_of_employees":{"$gt":50}}
+
+{"Ejercicio 9":"Filtro"}
+{"$and":[{"stops":{"$gte":1}},{"stops":{"$lte":5}}]}
+
+{"Ejercicio 10":"Filtro"}
+{"number_of_employees":{"$ne":null}}
+{"Ejercicio 10":"Ordenamiento"}
+{"number_of_employees":1}
+{"Ejercicio 10":{"Limit":1}}
+
+{"Ejercicio 11":"Ordenamiento"}
+{"number_of_employees":-1}
+{"Ejercicio 11":{"Limit":1}}
+
+{"Ejercicio 12":"Ordenamiento"}
+{"tripduration":-1}
+{"Ejercicio 12":{"Limit":1}}
+
+{"Ejercicio 13":"Ordenamiento"}
+{"tripduration":1}
+{"Ejercicio 13":{"Limit":1}}
