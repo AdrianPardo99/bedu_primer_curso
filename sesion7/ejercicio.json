@@ -1,0 +1,69 @@
+/* Lookup en comments */
+{
+  "from": "movies",
+  "localField": "movie_id",
+  "foreignField": "_id",
+  "as": "peliculas"
+}
+
+/* Match para eliminar arreglos vacios */
+{
+  "peliculas":{"$gt":[]}
+}
+
+/* AddField */
+{
+  "pelicula_objeto": {
+    "$arrayElemAt": [
+      "$peliculas",
+      0
+    ]
+  }
+}
+
+/* AddField */
+{
+  "pais":"$pelicula_objeto.countries",
+  "genero":"$pelicula_objeto.genres"
+}
+
+/* Unwind para el array de pais y posterior el de genero */
+{
+  "path": "$pais"
+}
+{
+  "path": "$genero"
+}
+
+/* Project de los datos que necesitamos */
+{
+  "_id":0,
+  "pais":1,
+  "genero":1
+}
+
+/* Group para los datos, como nota aqui podria terminar el reto */
+{
+  "_id": {
+    "pais":"$pais",
+    "genero":"$genero"
+  },
+  "peliculas": {
+    "$sum":1
+  }
+}
+
+/* En caso de que no se desee ver el json con el _id, addField */
+{
+  "pais":"$_id.pais",
+  "genero":"$_id.genero"
+}
+
+/* Project */
+{
+  "_id":0,
+  "pais":1,
+  "genero":1,
+  "peliculas":1
+
+}
